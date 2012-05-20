@@ -97,7 +97,13 @@ jQuery(document).ready(function() {
 	
 			<?php do_action( 'bp_after_header' ) ?>
 			<?php do_action( 'bp_before_container' ) ?>
-
+      
+      <?php if (function_exists('breadcrumbs_everywhere')) {
+      ?> <div id="breadcrumb"><?php
+        breadcrumbs_everywhere();
+      ?></div><?php
+      } ?>
+      
 			<div id="container">
 
 			

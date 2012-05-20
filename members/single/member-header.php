@@ -24,12 +24,6 @@
 
 	<div id="item-meta">
 
-		<div id="item-buttons">
-
-			<?php do_action( 'bp_member_header_actions' ); ?>
-
-		</div><!-- #item-buttons -->
-
 		<?php
 		 /***
 		  * If you'd like to show specific profile fields here use:
@@ -44,5 +38,11 @@
 </div><!-- #item-header-content -->
 
 <?php do_action( 'bp_after_member_header' ) ?>
+
+    <div id="item-buttons">
+
+      <?php do_action( 'bp_member_header_actions' ); ?>
+
+    </div><!-- #item-buttons -->
 
 <?php do_action( 'template_notices' ) ?>

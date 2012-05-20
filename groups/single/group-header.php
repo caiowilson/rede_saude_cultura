@@ -20,7 +20,6 @@
         <?php bp_group_description() ?>
       </div>    
     </div>
- 
 
 		<div id="item-actions">
 			<?php if ( bp_group_is_visible() ) : ?>
