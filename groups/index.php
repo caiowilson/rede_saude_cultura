@@ -8,7 +8,7 @@
  */
 
 ?>
-
+ 
 <?php get_header( 'buddypress' ); ?>
 
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
