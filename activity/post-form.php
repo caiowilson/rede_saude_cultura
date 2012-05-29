@@ -11,8 +11,8 @@
 
 <?php global $buddy_boss_wall, $bp;  ?>
 
-<?php if (bp_is_group() || bp_is_home() || bp_is_member() || bp_is_user_activity() || 'activity' == bp_dtheme_page_on_front() || ( is_page() && $bp->current_component === 'activity' ) ): ?>
- 	
+<?php if (bp_is_group() || bp_is_home() || bp_is_member() || bp_is_user_activity() || 'activity' == bp_dtheme_page_on_front() || ( is_page() && $bp->current_component === 'activity' ) || ( is_page() && $bp->current_component === 'bookmarklet' ) ): ?>
+
 	<?php if ( !is_user_logged_in() ) : ?>
 	
 		<div id="message">
@@ -54,7 +54,7 @@
 											
 					<?php else :?>
 						
-						<?php printf( __( "Add a photo, %s", 'buddypress' ), bp_get_user_firstname() );?>
+						<?php printf( __( "What's new, %s?", 'buddypress' ), bp_get_user_firstname() );?>
 						
 					<?php endif; ?>		
 				</h5>
