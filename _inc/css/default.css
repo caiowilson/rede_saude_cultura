@@ -2215,7 +2215,8 @@ div#item-header ul.avatars img.avatar {
 }
 div#item-header div.generic-button, div#item-header a.button {
 	display: inline;
-	margin: 0 5px;
+	margin: 40px 5px 0 0;
+	z-index: 999;
 }
 div#item-header div#message.info {
 	line-height: 80%;
