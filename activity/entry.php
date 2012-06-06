@@ -11,7 +11,13 @@
  */
 
 global $buddy_boss_wall,$bp;
-
+/*
+$x = get_defined_vars();
+print "<pre>";
+print_r( bp_get_activity_root_slug() );
+print_r($x);
+print "</pre>";exit;
+*/
 ?>
 
 <?php do_action( 'bp_before_activity_entry' ); ?>
@@ -22,7 +28,7 @@ global $buddy_boss_wall,$bp;
 			<?php bp_activity_avatar( 'type=thumb' ); ?>
 		</a>
 	</div>
-
+  
 	<div class="activity-content">
 
 		<div class="activity-header">
@@ -40,6 +46,7 @@ global $buddy_boss_wall,$bp;
 		<?php if ( bp_activity_has_content() ) : ?>
 			<div class="activity-inner">
 				<?php bp_activity_content_body(); ?>
+				
 			</div>
 		<?php endif; ?>
 
@@ -78,14 +85,19 @@ global $buddy_boss_wall,$bp;
 				<?php $owner = (bp_get_activity_user_id() == $bp->loggedin_user->id); ?>
 					 
 				<?php if ( (is_super_admin() || ($bp->current_action!="just-me" && $bp->is_item_admin) ||  $owner)) : ?>
-				
+
 					&middot; <a href="<?php echo wp_nonce_url( $bp->root_domain . '/' . $bp->activity->slug . '/delete/' . bp_get_activity_id() . '?cid=' . $comment_id, 'bp_activity_delete_link' ) ?>" class="delete acomment-delete confirm"><?php _e( 'Delete', 'buddypress' ) ?></a>
-				
+
 				<?php endif; ?>
 				
 
 				<?php do_action( 'bp_activity_entry_meta' ); ?>
-
+      
+      <span class="activity-link">
+        . <a title="Link para essa atividade" href="<?php print bp_activity_get_permalink(bp_get_activity_id()); ?>">
+         Link
+        </a>
+      </span>
 			</div>
 
 		<?php endif; ?>

@@ -24,7 +24,7 @@
 		    	</div>
 		    	
 		    	<div id="credits">
-			    	<p>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> &nbsp;&middot;&nbsp; <a href="http://www.buddyboss.com/" target="_blank">BuddyPress Themes by BuddyBoss</a> &nbsp;&middot;&nbsp; <?php wp_loginout( $redirect ); ?></p>
+			    	<p> <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - alguns direitos reservados &nbsp;&middot;&nbsp; <?php wp_loginout( $redirect ); ?></p>
 		    	</div>
 	
 				<?php do_action( 'bp_footer' ) ?>
@@ -34,10 +34,10 @@
 			</div><!-- #footer -->
 		
 		<?php do_action( 'bp_after_footer' ) ?>
-	
+
 		<!-- required to load the BuddyBar -->
 		<?php wp_footer(); ?>
-		
+
 		<!-- append buddyboss_wall log if needed -->
 		<?php if (BUDDY_BOSS_WALL_DEBUG):?>		
 			<div class="buddyboss_log">

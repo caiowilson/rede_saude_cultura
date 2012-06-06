@@ -9,14 +9,8 @@ Tags: buddypress, two-columns, right-sidebar, fixed-width, flexible-width
 Template: buddyboss
 */
 
-/* Inherit the default theme styles */
-@import url( ../buddyboss/_inc/css/default.css );
+@import url( _inc/css/default.css );
 
-/* Inherit the default theme adminbar styles */
-@import url( ../buddyboss/_inc/css/buddybar.css );
+@import url( _inc/css/buddybar.css );
 
-/* Inherit the default theme custom styles */
-@import url( ../buddyboss/_inc/css/custom.css );
-
-/* Add your own custom styles */
 @import url( _inc/css/custom.css );
