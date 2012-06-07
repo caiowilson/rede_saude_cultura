@@ -12,8 +12,11 @@
         </div>
       </div>
   </div>
-
-	<div id="content">
+   <?php if ( is_active_sidebar('sidebar.php') ) : ?> 
+     <div id="content" class="three_column">  
+   <?php else: ?>
+     <div id="content" class="two_column_left">  
+   <?php endif; ?>
 		<div class="padder">
 
 			<div id="item-body">

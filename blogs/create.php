@@ -7,13 +7,21 @@
  * @subpackage BuddyBoss
  */
 
-?>
+// hack para resolver o bug de criar sites de sub diretorios
+$GLOBALS['domain'] = str_replace('http://', '', $GLOBALS['domain']);
 
+?>
 <?php get_header( 'buddypress' ); ?>
+
+  <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
 	<?php do_action( 'bp_before_directory_blogs_content' ) ?>
 
-	<div id="content">
+  <?php if ( is_active_sidebar('blogs') ) : ?>
+    <div id="content" class="three_column" >
+  <?php else: ?>
+    <div id="content" class="two_column_left" >
+  <?php endif; ?>
 		<div class="padder" role="main">
 
 		<?php do_action( 'template_notices' ); ?>
