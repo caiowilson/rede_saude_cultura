@@ -1,0 +1,16 @@
+/*
+Theme Name: Rede Internet Saude 2
+Description: Um theme com barra de navegação de usuário na esquerda e com 3 colunas baseado no buddyboss
+Theme URI:
+Version: v0.0.1
+Author: NEXT
+Author URI: http://next.icict.fiocruz.br
+Tags: buddypress, two-columns, right-sidebar, fixed-width, flexible-width
+Template: buddyboss
+*/
+
+@import url( _inc/css/default.css );
+
+@import url( _inc/css/buddybar.css );
+
+@import url( _inc/css/custom.css );
