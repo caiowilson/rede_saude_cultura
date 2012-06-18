@@ -11,9 +11,11 @@
 
 <?php get_header( 'buddypress' ); ?>
 
+  <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
+
 	<?php do_action( 'bp_before_directory_blogs_content' ) ?>
 
-	<div id="content">
+  <div id="content" class="two_column_left" >
 		<div class="padder" role="main">
 
 		<?php do_action( 'template_notices' ); ?>
