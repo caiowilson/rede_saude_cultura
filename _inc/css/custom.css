@@ -8,10 +8,11 @@ The same rule applies to PHP files. Copy PHP files you wish to edit from BuddyBo
 
 body {
 	background: #CDE6E9;
+	color:		#656565;
 }
 
 #wrapper {
-  background: #fff;
+  background: url('../images/bg_wrapper.jpg');
 
 }
 #wrapper,
@@ -22,7 +23,7 @@ body {
 #header {
 	height: 148px;
 	margin-bottom: 10px;
-	margin-top: 5px;
+	margin-top: 0;
 	background: #fff;
 }
 #header h1{
@@ -45,7 +46,7 @@ body {
 }
 
 .bbp-login-form{
-  padding: 10px;
+  padding: 0px;
 }
 
 .sf-menu a {
@@ -74,8 +75,9 @@ a > .sf-sub-indicator {
 }
 
 div#container {
-  margin: 3px;
+  margin: 0 3px;
   width: auto;
+  background: url('../images/bg_left.jpg') repeat-y;
   
 }
 
@@ -104,7 +106,7 @@ div#sidebar.left_column {
 }
 
 div#sidebar.left_column{
-  border-right: 1px solid #C0D3E1;
+  border-right: 0px solid #C0D3E1;
 }
 
 div#sidebar.left_column .padder {
@@ -199,12 +201,25 @@ div#sidebar.group-sidebar .no-search {
 }
 
 
-div#fiocruz { background:#085222; height:35px; }
-div#fiocruz { background:url("http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/bg_fiocruz.jpg") repeat-x; }
+div#fiocruz { 
+	background:#085222; 
+	height:33px; 
+}
+
+div#fiocruz {
+	background: url("http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/bg_fiocruz.jpg") repeat-x;
+}
 
 /* Begin Typography & Colors */
 * { margin: 0; padding: 0; }
-body { background: #CDE6E9 /*url(images/body-bkg.png) no-repeat center top*/; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; padding: 0px; margin-top: 0px; color:#35383d; padding-bottom:40px;}
+body { 
+	background: url('../images/bg_tudo.jpg');
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	padding: 0px; 
+	margin-top: 0px; 
+	color:#35383d;
+}
 
 legend { display: none; }
 fieldset { border: none; }
@@ -349,27 +364,34 @@ ul.superfish-menu li li li.sfHover ul {
   margin-bottom:  1em;
 }
 .superfish-menu a {
-  border-left:  1px solid #fff;
-  border-top:   1px solid #CFDEFF;
-  padding:    .75em 1em;
+  border-left:  4px solid #cdcdcd;
+  padding:    .75em 10px;
+  width: 132px;
+  margin: 2px 0 0 0;
+  background: #f4f4f4;
   text-decoration:none;
 }
+.superfish-menu a:hover {
+border-left:  4px solid #f7950c;
+color: #f7950c;
+}
 .superfish-menu a, .superfish-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-  color:      #13a;
+  color:      none;
 }
 .superfish-menu li {
-  background:   #FFF;
+  background:   none;
 }
 .superfish-menu li li {
   background:   #FFF;
 }
 .superfish-menu li li li {
-  background:   #FFF;  
+  background:   none;  
 }
 .superfish-menu li:hover, .superfish-menu li.sfHover,
 .superfish-menu a:focus, .superfish-menu a:hover, .superfish-menu a:active {
-  background:   #CFDEFF;
+  background:   f4f4f4;
   outline:    0;
+  
 }
 
 /*** arrows **/
@@ -475,18 +497,14 @@ div#sidebar .widget {
 div#sidebar .widget,
 div#sidebar div.item-list-tabs,
 div#sidebar div.item-list-tabs{
-  background-color: #fff;
+  background: none;
+  width: 170px;
 }
 div#sidebar .widget_bpnextprofilewidget div.login-box,
 .bluebar{
   margin-bottom: 25px;
   padding: 10px 6px;
   overflow: hidden;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #C0D3E1;
-  background-color: #EAF6FD;
 }
 
 div#sidebar .widget_bpnextprofilewidget,
@@ -502,7 +520,8 @@ div#content.two_column_left .padder {
 }
 
 div#content.three_column .padder {
-  margin: 0 210px 0 205px;
+  margin: 0 210px 0 200px;
+  width: 570px;
 }
 
 div#item-header,
@@ -626,7 +645,11 @@ div#object-nav.item-list-tabs li, div#sub-nav.item-list-tabs li {
  */
 
 #breadcrumb{
- margin: 3px 10px 15px 10px;
+ color: #656565;
+ margin: 0;
+ padding: 20px 0 0 10px;
+ height: 40px;
+ background: url('../images/bg_naveg.jpg');
 }
 
 .breadcrumb { 
@@ -760,6 +783,7 @@ div#sidebar h3.widgettitle{
   float: none;
   clear: both;
   width: 99%;
+  color: #0990ca;
 }
 
 /* blue

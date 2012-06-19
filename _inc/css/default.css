@@ -83,6 +83,7 @@ body.buddyboss-activity-ajax {
 }
 #wrapper {
 	width: 1000px;
+	padding: 0 5px 0 6px;
 }
 div#container {
 	position: relative;
@@ -172,7 +173,6 @@ html, body {
 	background-color: #4B4B4B;
 	width: 100%;
 	font-weight: bold;
-	margin-top: 40px;
 }	
 #colophon {
 	padding: 25px;
@@ -219,7 +219,7 @@ div#sidebar .widget {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  border: 1px solid #c0d3e1;
+  border: 0px solid #c0d3e1;
 }
 div#sidebar .widget_recent_entries ul,
 div#sidebar .widget_categories ul,
@@ -274,7 +274,7 @@ div#sidebar .widget ul.item-list {
 	border-top: none;
 }
 div#sidebar .widget ul.item-list li {
-	border-top: 1px solid #d4e8f0;
+	border-top: 1px solid #d7d7d7;
 	border-bottom: none;
 	min-height: 54px;
 }
@@ -306,10 +306,10 @@ div#sidebar ul.item-list div.item-title {
 	font-size: 12px;
 }
 div#sidebar div.item-options {
-	color: #c6d7e1;
+  color: #c6d7e1;
   font-size: 11px;
   margin: -5px -12px 0;
-  padding: 0 11px 5px;
+  padding: 0 5px 5px 5px;
   clear:left;
   text-align: center;
   border: none;
@@ -576,7 +576,7 @@ div#item-body div#subnav.item-list-tabs,
 body.directory div.item-list-tabs,
 body.home-page div.item-list-tabs,
 ul.button-nav, #bps_Form {
-	background-color: #eaf6fd;
+	background-color: none;
 }
 div#item-body div#subnav.item-list-tabs ul li a,
 div.item-list-tabs ul li a,
@@ -1122,11 +1122,7 @@ form#whats-new-form h5 {
 	padding: 0 0 5px;
 }
 form#whats-new-form #whats-new-content #whats-new-textarea {
-  padding: 10px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #C0D3E1;
+  padding: 0;
 }
 div#whats-new-pic-preview-inner {
 	background-color: #F6F6F6;
@@ -1157,6 +1153,7 @@ body.home-page form#whats-new-form textarea {
 }
 div#content.two_column form#whats-new-form textarea {
 	width: 98%;
+	border: 1px solid #BBBBBB;
 	* width: 97%; /* IE7 only */
 }
 form#whats-new-form #whats-new-options {
@@ -1307,27 +1304,19 @@ body.activity-permalink .activity-content blockquote {
 	font-weight: bold;
 	display: block;
 	padding: 9px 15px;
-	color: #555;
+	color: #5c8716;
 	text-align: center;
 	font-size: 1.1em;
 	text-decoration: none;
-	border: 1px solid #C0D3E1;
+	border: 1px solid #a3cb50;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	background-color: #c0dae9;
-	background-image: -webkit-linear-gradient(top, #d7e9f3, #c0dae9); 
-	background-image: -moz-linear-gradient(top, #d7e9f3, #c0dae9);
-	background-image: -ms-linear-gradient(top, #d7e9f3, #c0dae9);
-	background-image: -o-linear-gradient(top, #d7e9f3, #c0dae9);
+	background: #9fcb57 url('../images/button-gradient.png') repeat-x;
 }
 .activity-list li.load-more a:hover {
 	text-decoration: none;
-	background-color: #cce8f4;
-	background-image: -webkit-linear-gradient(top, #d9f1fc, #cce8f4); 
-	background-image: -moz-linear-gradient(top, #d9f1fc, #cce8f4);
-	background-image: -ms-linear-gradient(top, #d9f1fc, #cce8f4);
-	background-image: -o-linear-gradient(top, #d9f1fc, #cce8f4);
+	background: #a5ce62 url('../images/button-gradient-hover.png') repeat-x;
 }
 
 /*--------------------------------------------------------------
@@ -1375,7 +1364,7 @@ div.activity-comments ul {
 	background-image: url(../images/activity-comments-arrow.gif);
 	background-position: top left;
 	background-repeat: no-repeat;
-	background-color: #E8EEF3;
+	background-color: #f0f0f0;
 	padding-top: 8px;
 }
 div.activity-comments ul li {
@@ -1542,6 +1531,7 @@ div.dir-search input[type=text] {
 body.activity #content h1 {
 	line-height: 1.3em;
 	margin-bottom: 20px;
+	margin-top: 10px;
 	font-size: 21px;
 }
 .item-body#group-create-body {
@@ -2053,6 +2043,7 @@ body.home-page div.item-list-tabs,
 ul.button-nav {
 	padding: 0;
 	background-image: url( ../images/item-list-tabs_bottom.gif );
+	background: #none;
 	background-position: bottom;
 	background-repeat: repeat-x;
 	border-bottom: none;
@@ -2089,8 +2080,9 @@ div.item-list-tabs ul li a,
 ul.button-nav li a {
 	padding: 7px 11px;
 	display: block;
-	margin: 1px 1px 0; /* makes up for no border */
-	color: #666;
+	margin: 0; /* makes up for no border */
+	background: #dddddd;
+	color: #FFF;
 	font-weight: bold;
 	text-decoration: none;
 	-moz-border-radius: 3px 3px 0 0;
@@ -2110,12 +2102,9 @@ body.home-page div.item-list-tabs ul li a:hover,
 ul.button-nav li.selected a,
 ul.button-nav li.current a,
 ul.button-nav li a:hover {
-	background-color: #fff;
-	color: #555;
+	background-color: #a9d061;
+	color: #FFF;
 	margin: 0;
-	border-top: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-left: 1px solid #ddd;
 }
 div#item-header-content h2 {
 	font-size: 28px;
@@ -2368,7 +2357,7 @@ div#subnav.item-list-tabs ul li.last select {
 body.directory div.item-list-tabs ul li a span {
   display: inline;
   margin-left: 4px;
-  color: #9bb1bd;
+  color: #FFF;
 }
 ul li.loading a {
 	background-image: url( ../images/ajax-loader.gif );
@@ -2395,7 +2384,6 @@ div#object-nav.item-list-tabs li,
 div#sub-nav.item-list-tabs li {
 	display: block;
 	clear: left;
-	border-bottom: 1px solid #eee;
 	width: 150px;
 	padding: 0;
 	margin: 0;
@@ -2516,15 +2504,15 @@ span.group-type {
 --------------------------------------------------------------*/
 
 a.button, input[type=submit], input[type=button], input[type=reset], div.generic-button a, .bbp-submit-wrapper button {
-	background: #e1e0e0 url(../images/button-gradient.png) top repeat-x;
-	* background: #f6f6f6; /* IE7 only */ 
-	border: 1px solid #bbb;
+	background: #9fcb57 url(../images/button-gradient.png) top repeat-x;
+	* background: #c9e284; /* IE7 only */ 
+	border: 1px solid #adc671;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	padding: 4px 9px !important;
 	text-decoration: none;
-	color: #444;
+	color: #93ac56;
 	font-size: 12px;
 	font-weight: normal;
 	vertical-align: bottom;
@@ -2533,9 +2521,9 @@ a.button, input[type=submit], input[type=button], input[type=reset], div.generic
 	display: inline-block; /* IE7 Fix */	
 }
 a.button:hover, a.button:focus, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, div.generic-button a:hover, .bbp-submit-wrapper button:hover {
-	border-color: #666666;
-	* background: #ececec; /* IE7 only */
-	color: #555;
+	border-color: #93ac56;
+	* background: #c9e284; /* IE7 only */
+	color: #719028;
 	outline: none;
 }
 a.delete-activity {
