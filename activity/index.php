@@ -80,13 +80,14 @@ $fav_tab_text = BUDDY_BOSS_WALL_ENABLED ? 'My Likes' : 'My Favorites';
 					<?php endif; ?>
 
 					<?php do_action( 'bp_activity_type_tabs' ) ?>
-					
-					<div class="feed"><a href="<?php bp_sitewide_activity_feed_link() ?>" title="<?php _e( 'RSS Feed', 'buddypress' ); ?>"><?php _e( 'RSS', 'buddypress' ) ?></a></div>
-					
+
 				</ul>
 			</div><!-- .item-list-tabs -->
-			
+      
 			<div class="item-list-tabs no-ajax" id="subnav" role="navigation">
+            
+					<div class="feed"><a href="<?php bp_sitewide_activity_feed_link() ?>" title="<?php _e( 'RSS Feed', 'buddypress' ); ?>"><?php _e( 'RSS', 'buddypress' ) ?></a></div>
+					
 				<ul>
 
 					<?php do_action( 'bp_activity_syndication_options' ) ?>

@@ -15,7 +15,8 @@
 	<div id="item-header-content">
 
     <div id="group-name">
-      <h2><?php bp_group_name() ?> <?php do_action( 'bp_group_header_actions' ); ?></h2>
+      <h2><?php bp_group_name() ?></h2>
+	  <?php do_action( 'bp_group_header_actions' ); ?>
       <div class="entry-directory">
         <?php bp_group_description() ?>
       </div>    

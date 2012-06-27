@@ -11,7 +11,14 @@
 
 <?php get_header( 'buddypress' ); ?>
 
-	<div id="content" <?php if ( is_active_sidebar('groups') ) : ?>class="two_column"<?php endif; ?>>
+  <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
+
+  <?php if ( is_active_sidebar('groups') ) : ?>
+    <div id="content" class="three_column" >
+  <?php else: ?>
+    <div id="content" class="two_column_left" >
+  <?php endif; ?>
+  
 		<div class="padder">
 
 		<form action="<?php bp_group_creation_form_action(); ?>" method="post" id="create-group-form" class="standard-form dir-form" enctype="multipart/form-data">

@@ -46,9 +46,10 @@ body {
 #wp-admin-bar li a {
 	padding: 10px 5px;
 	color: #4D6A1A;
+	height: 8px;
 	text-decoration: none;
 	font-size: 10px;
-	border-left: 1px solid #8bb147;
+	border-left: 1px solid #D6D6D6;
 	text-align: center;
 	word-wrap: break-word;
 	min-width: 100px;
@@ -88,18 +89,15 @@ First Level Lists
 	line-height: 1;
 	cursor: pointer;
 	height: auto;
-	padding: 0;
+	padding: 0 0 0 20px;
 	float: right;
-	margin: 30px 0 0 0;
-  background: #9fcb57 url(../images/button-gradient.png) top repeat-x;
-  border: 1px solid #adc671;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+	margin: 0px 0 0 0;
+    background: url(../images/bg-admin-bar.jpg) no-repeat;
 }
 #wp-admin-bar ul li { /* all list items */
 	padding: 0;
 	float: left;
+	background: url(../images/bg-admin-bar-repete.jpg) repeat-x;
 	position: relative;
 }
 #wp-admin-bar ul li.no-arrow {
@@ -213,4 +211,8 @@ Menu Items
   font-weight: bold;
   float: right;
   * float: none; /* IE7 */
+}
+#wp-admin-bar ul li#bp-adminbar-notifications-menu {
+	background:	url(../images/bg-admin-bar-ultimo.jpg) no-repeat;
+	padding: 0 10px 0 0;
 }
