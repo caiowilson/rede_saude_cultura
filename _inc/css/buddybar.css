@@ -84,7 +84,7 @@ body.logged-in #wp-admin-bar li a {
 First Level Lists
 --------------------------------------------------------------*/
 
-#wp-admin-bar ul { /* all lists */
+#wp-admin-bar ul.main-nav { /* all lists */
 	list-style: none;
 	line-height: 1;
 	cursor: pointer;
@@ -100,9 +100,16 @@ First Level Lists
 	background: url(../images/bg-admin-bar-repete.jpg) repeat-x;
 	position: relative;
 }
-#wp-admin-bar ul li.no-arrow {
-	background: none;
-	padding-right: 0;
+#wp-admin-bar ul li.bp-login {
+	padding: 0;
+	float: left;
+	background: url(../images/bg-admin-bar-repete.jpg) repeat-x;
+	position: relative;
+}
+#wp-admin-bar ul li.bp-signup {
+padding: 0 10px 0 0;
+	border-left: none;
+	border-right: 1px solid #D6D6D6;
 }
 #wp-admin-bar ul li ul li {
 	background-image: none;
@@ -115,7 +122,7 @@ First Level Lists
 	display: block;
 }
 #wp-admin-bar ul.main-nav li:hover, #wp-admin-bar ul.main-nav li.sfhover, #wp-admin-bar ul.main-nav li ul li.sfhover {
-	border-color: #567312;
+	*/border-color: #567312;*/
 }
 
 /*--------------------------------------------------------------
@@ -124,7 +131,7 @@ Second Level Lists
 
 #wp-admin-bar ul li ul {
 	position: absolute;
-	width: 128px;
+	width: 140px;
 	left: -999em;
 	margin-left: 0;
 	margin-top: 0; /* lines up dropdowns with menu */
@@ -143,7 +150,7 @@ Second Level Lists
 	border-top-right-radius: 0;
 }
 #wp-admin-bar ul li ul li ul {
-	border-top: 1px solid #dfdfdf;
+	margin-left: 140px;
 }
 #wp-admin-bar ul li ul a {
 	color: #000;
@@ -151,7 +158,7 @@ Second Level Lists
 }
 #wp-admin-bar ul li ul li {
 	float: left;
-	width: 128px;
+	width: 140px;
 	margin: 0;
 }
 #wp-admin-bar ul li ul li:hover a {
@@ -209,10 +216,14 @@ Menu Items
 #wp-admin-bar ul li#bp-adminbar-notifications-menu a span {
 	color: #f96565;
   font-weight: bold;
-  float: right;
   * float: none; /* IE7 */
 }
 #wp-admin-bar ul li#bp-adminbar-notifications-menu {
-	background:	url(../images/bg-admin-bar-ultimo.jpg) no-repeat;
 	padding: 0 10px 0 0;
+	border-right: 1px solid #D6D6D6;
+}
+#wp-admin-bar ul li#bp-adminbar-adminoptions-menu {
+	padding: 0 10px 0 0;
+	border-left: none;
+	border-right: 1px solid #D6D6D6;
 }
