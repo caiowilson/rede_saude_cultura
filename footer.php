@@ -21,12 +21,18 @@
 							<?php	} ?>
 						</ul>
 			    	
-		    	</div>
 		    	
-		    	<div id="credits">
-			    	<p> <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - alguns direitos reservados &nbsp;&middot;&nbsp; <?php wp_loginout( $redirect ); ?></p>
-		    	</div>
-	
+		    	
+					<div id="credits">
+						<p> <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - alguns direitos reservados &nbsp;&middot;&nbsp; <?php wp_loginout( $redirect ); ?></p>
+					</div>
+				</div>
+				<div id="icones">
+					<a href="#" class="next">&nbsp;</a>
+					<a href="#" class="wordpress">&nbsp;</a>
+					<a href="#" class="budyboss">&nbsp;</a>
+				</div>
+				<div class="clr"></div>
 				<?php do_action( 'bp_footer' ) ?>
 				
 				</div>

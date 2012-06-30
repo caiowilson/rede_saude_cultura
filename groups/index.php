@@ -27,7 +27,7 @@
 			
 			<h1><?php the_title(); ?></h1>
 
-<?php if ( is_user_logged_in() && bp_user_can_create_groups() ) : ?> &nbsp;<a class="button" href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/create' ); ?>"><?php _e( 'Create a Group', 'buddypress' ); ?></a><?php endif; ?>
+<?php if ( is_user_logged_in() && bp_user_can_create_groups() ) : ?><a class="button-2"href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/create' ); ?>"><?php _e( 'Create a Group', 'buddypress' ); ?></a><?php endif; ?>
 			
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div class="entry-directory">

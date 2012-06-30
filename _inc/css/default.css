@@ -163,37 +163,80 @@ html, body {
 }
 #wrapper {
 	min-height: 100%;
-	margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+	margin: 0 auto;
 }
-#footer, #push {
-	min-height: 142px; /* .push must be the same height as .footer */
-}
+
 #footer {
-	color: #bbb;
-	background-color: #4B4B4B;
-	width: 100%;
-	font-weight: bold;
+	color: #000;
+	background: #FFFFFF url(../images/bg_wrapper.jpg);
+	width: 1010px;
+	margin: 0 auto;
 }	
 #colophon {
-	padding: 25px;
+	padding:25px 25px 29px 25px;
+	width: 950px;
+	background: url(../images/bg-footer.jpg) repeat-x;
+	margin: 0 0 0 6px;
 }
 #footer a {
-	color: #eee;
+	color: #6dcfe8;
 }
 #footer #footer-links {
-	text-align: center;
-	margin: 0 0 10px;
+width: 500px;
+float: left;
+border: 0px solid #000;
+}
+#footer #footer-links a{
+	color: #6dcfe8;
+}
+#footer #footer-links a:hover{
+	color: #989898;
+	text-decoration: none;
 }
 #footer #footer-links ul li {
 	display: inline;
 	margin: 0 6px;
 }
 #footer #credits {
-	clear: left;
-	margin: 0 0 10px;
-	text-align: center;
+	margin: 0 0 10px 0;
+	color: #727272;
 }
-
+#footer #icones {
+width: 300px;
+float: left;
+margin: 0 0 0 100px;
+border: 0px solid #000;
+}
+#footer #icones .next, #footer #icones .wordpress, #footer #icones .budyboss{
+border: 0px solid #000;
+float: right;
+width: 50px;
+height: 50px;
+}
+#footer #icones a.next {
+background: url(../images/footer-icones.jpg);
+}
+#footer #icones a.wordpress {
+background: url(../images/footer-icones.jpg) 46px 0;
+}
+#footer #icones a.budyboss {
+background: url(../images/footer-icones.jpg) 88px 0;
+}
+#footer #icones a.next:hover {
+background: url(../images/footer-icones.jpg) 0 49px;
+text-decoration: none;
+}
+#footer #icones a.wordpress:hover {
+background: url(../images/footer-icones.jpg) 46px 49px;
+text-decoration: none;
+}
+#footer #icones a.budyboss:hover {
+background: url(../images/footer-icones.jpg) 88px 49px;
+text-decoration: none;
+}
+.clr {
+clear: both;
+}
 /*--------------------------------------------------------------
 2.4 - Sidebars
 --------------------------------------------------------------*/
@@ -596,7 +639,7 @@ ul.button-nav li a {
 .sf-menu {
 	line-height:1.0;
 	position: absolute;
-	bottom: 0;
+	bottom: -20px;
 	left: 0;
 	width: 100%;
 	font-weight: bold;
@@ -654,8 +697,8 @@ ul.sf-menu li li li.sfHover ul {
 	top: 0;
 }
 .sf-menu li.current_page_item a,
-.sf-menu li.selected a {
-	background: #545454 url(../images/nav.png) center 0 repeat-x;
+.sf-menu li.selected a{
+
 }
 .sf-menu a, .sf-menu a:hover, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
 	color: #fff;
@@ -674,7 +717,6 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-	background:	#9c9c9c url(../images/nav.png) center -200px repeat-x !important; /* !important overrides .current_page_item from changing background color on all children */
 	outline: 0;
 }
 
@@ -1410,7 +1452,7 @@ div.activity-comments form.ac-form {
 	margin: 0 -10px;
 	padding: 10px;		
 	border-top: 2px solid #fff;
-	background: #E8EEF3;
+	background: #f0f0f0;
 }
 div.activity-comments li form.ac-form {
 	clear: both;
@@ -2336,7 +2378,7 @@ ul#friend-list li, ul.invite-list li {
 div.item-list-tabs ul li.last {
 	float: right !important;
 	margin-right:0;
-	margin-top: 4px;
+	margin-top: 20px;
 }
 body.my-activity div.item-list-tabs ul li.last {
 	margin: 0 !important;
@@ -2503,7 +2545,7 @@ span.group-type {
 6.12 - Buttons
 --------------------------------------------------------------*/
 
-a.button, input[type=submit], input[type=button], input[type=reset], div.generic-button a, .bbp-submit-wrapper button {
+a.button, input[type=submit], input[type=button], input[type=reset], .bbp-submit-wrapper button {
 	background: #9fcb57 url(../images/button-gradient.png) top repeat-x;
 	* background: #c9e284; /* IE7 only */ 
 	border: 1px solid #adc671;
@@ -2512,7 +2554,7 @@ a.button, input[type=submit], input[type=button], input[type=reset], div.generic
 	border-radius: 3px;
 	padding: 4px 9px !important;
 	text-decoration: none;
-	color: #93ac56;
+	color: #708A31;
 	font-size: 12px;
 	font-weight: normal;
 	vertical-align: bottom;
@@ -2523,7 +2565,7 @@ a.button, input[type=submit], input[type=button], input[type=reset], div.generic
 a.button:hover, a.button:focus, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, div.generic-button a:hover, .bbp-submit-wrapper button:hover {
 	border-color: #93ac56;
 	* background: #c9e284; /* IE7 only */
-	color: #719028;
+	color: #89AA3A;
 	outline: none;
 }
 a.delete-activity {
@@ -2539,11 +2581,13 @@ h1 a.button, h2 .generic-button a {
 
 /* Buttons that are disabled */
 div.pending a, a.disabled {
-	border-color: #eee;
-	color: #bbb;
-	cursor: default;
+	background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ededed));
+  border-color: #eee;
+  color: #bbb;
 }
-div.pending a:hover, a.disabled:hover { border-color: #eee; color: #bbb; }
+div.pending a:hover, a.disabled:hover { 
+	border-color: #eee; 
+	color: #bbb; }
 div.accept, div.reject {
 	float: left;
 	margin-left: 10px;
@@ -2743,8 +2787,8 @@ div.item-avatar a.link-play {
   padding: 0 0 0 15px !important;
 }
 .group-subscription-options {
-	background-color: #eaf6fd !important;
-	border: 1px solid #aaa;
+	background-color: #F5F5F5 !important;
+	border: 1px solid #DBDBDB;
 	box-shadow: 0px 2px 5px #ccc;
 	-webkit-box-shadow: 0px 2px 5px #ccc;
 	-moz-box-shadow: 0px 2px 5px #ccc;
