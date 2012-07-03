@@ -16,7 +16,7 @@ body {
 
 }
 #header {
-	height: 220px;
+	height: 190px;
 	margin-bottom: 30px;
 	margin-top: 0;
 	background: url(../images/pattern.jpg);
@@ -24,10 +24,11 @@ body {
 #header h1{
   text-indent: -9999px;
   position: absolute;
+  top: 20px;
   float: left;
   border: none;
-  width: 350px;
-  height: 140px;
+  width: 304px;
+  height: 108px;
   background: url(../images/topo.jpg);
   font-weight: bold;
 }

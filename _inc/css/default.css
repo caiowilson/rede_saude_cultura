@@ -207,7 +207,7 @@ float: left;
 margin: 0 0 0 100px;
 border: 0px solid #000;
 }
-#footer #icones .next, #footer #icones .wordpress, #footer #icones .budyboss{
+#footer #icones .next, #footer #icones .wordpress, #footer #icones .budypress{
 border: 0px solid #000;
 float: right;
 width: 50px;
@@ -217,21 +217,21 @@ height: 50px;
 background: url(../images/footer-icones.jpg);
 }
 #footer #icones a.wordpress {
-background: url(../images/footer-icones.jpg) 46px 0;
-}
-#footer #icones a.budyboss {
 background: url(../images/footer-icones.jpg) 88px 0;
+}
+#footer #icones a.budypress {
+background: url(../images/footer-icones.jpg) 46px 0;
 }
 #footer #icones a.next:hover {
 background: url(../images/footer-icones.jpg) 0 49px;
 text-decoration: none;
 }
 #footer #icones a.wordpress:hover {
-background: url(../images/footer-icones.jpg) 46px 49px;
+background: url(../images/footer-icones.jpg) 88px 49px;
 text-decoration: none;
 }
-#footer #icones a.budyboss:hover {
-background: url(../images/footer-icones.jpg) 88px 49px;
+#footer #icones a.budypress:hover {
+background: url(../images/footer-icones.jpg) 46px 49px;
 text-decoration: none;
 }
 .clr {
@@ -2378,7 +2378,6 @@ ul#friend-list li, ul.invite-list li {
 div.item-list-tabs ul li.last {
 	float: right !important;
 	margin-right:0;
-	margin-top: 20px;
 }
 body.my-activity div.item-list-tabs ul li.last {
 	margin: 0 !important;

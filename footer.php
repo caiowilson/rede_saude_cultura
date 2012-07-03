@@ -28,9 +28,9 @@
 					</div>
 				</div>
 				<div id="icones">
-					<a href="#" class="next">&nbsp;</a>
-					<a href="#" class="wordpress">&nbsp;</a>
-					<a href="#" class="budyboss">&nbsp;</a>
+					<a href="http://next.icict.fiocruz.br/" target="_blank" class="next">&nbsp;</a>
+					<a href="http://br.wordpress.org/" target="_blank" class="wordpress">&nbsp;</a>
+					<a href="http://buddypress.org/" target="_blank" class="budypress">&nbsp;</a>
 				</div>
 				<div class="clr"></div>
 				<?php do_action( 'bp_footer' ) ?>
