@@ -933,7 +933,7 @@ div.item-options {
 
 img.avatar {
 	float: left;
-	background: #eee;
+	background: #FFFFFF;
 	border: 1px solid #ccc;
 }
 #content .page img {
@@ -1626,7 +1626,7 @@ form.standard-form#signup_form div div.error {
 6.4 - Forms
 --------------------------------------------------------------*/
 
-form.standard-form textarea, form.standard-form input[type=text],
+form.standard-form input[type=text],
 form.standard-form select, form.standard-form input[type=password],
 .dir-search input[type=text],
 div.page input[type=text] {
@@ -2074,7 +2074,7 @@ div#item-header-avatar {
 	width: 152px;
 }	
 div#item-body {
-	margin-top: 5px;
+	margin: 5px 0 10px 0;
 }
 body.group-forum div#item-body {
 	margin-top: 0;
@@ -2245,7 +2245,7 @@ div#item-header ul.avatars img.avatar {
 	margin: 2px;
 }
 div#item-header div.generic-button, div#item-header a.button {
-	display: inline;
+	display: none;
 	margin: 40px 5px 0 0;
 	z-index: 999;
 }
@@ -2352,12 +2352,8 @@ ul.item-list li div.action {
 	position: absolute;
 	top: 15px;
 	right: 0;
-	padding-top: 5px;
 	text-align: right;
 }	
-ul.item-list li div.action div.generic-button {
-	display: inline;
-}
 ul.item-list li div.meta {
 	margin-top: 10px;
 	color: #999;

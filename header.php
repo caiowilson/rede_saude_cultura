@@ -34,8 +34,6 @@
           <a class="logo" href="http://www.fiocruz.br"><img src="http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/logo.jpg"></a>
           <img src="http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/titulo_fiocruz.jpg">
   </div>
-  
-  	
 	
 	<!--[if lte IE 6]><script src="<?php bloginfo('template_directory'); ?>/_inc/js/ie6/warning.js"></script><script>window.onload=function(){e("<?php bloginfo('stylesheet_directory'); ?>/_inc/js/ie6/")}</script><![endif]-->
 
@@ -78,7 +76,12 @@ jQuery(document).ready(function() {
 						</div>
 						<?php endif; ?>
 	<h1 class="title"> <a href="<?php echo site_url() ?>" title="<?php _e( 'Home', 'buddypress' )					
-						 ?>"><?php bloginfo( 'name' ); ?></a></H3>
+						 ?>"><?php bloginfo( 'name' ); ?></a></h1>
+					
+					
+					<!-- AQUI COMEÇA UM BLOQUINHO DE FOTO -->
+						<?php locate_template( array( 'header-bloco.php' ), true ) ?>
+							
 							
 						<ul class="sf-menu">
 							<?php if ( has_nav_menu( 'primary-menu' ) ) { ?>

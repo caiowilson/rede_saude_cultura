@@ -19,7 +19,7 @@ body {
 	height: 190px;
 	margin-bottom: 30px;
 	margin-top: 0;
-	background: url(../images/pattern.jpg);
+	background: url(../images/bg_topo.jpg) no-repeat;
 }
 #header h1{
   text-indent: -9999px;
@@ -155,7 +155,8 @@ div#sidebar.group-sidebar .no-search {
 .widget_buddypress_friends img{
   width: 43px;
   height: 43px;
-  margin: 4px;
+  margin: 3px;
+  padding: 2px;
 }
 
 /* retirado do site principal do NEXT */
@@ -292,7 +293,6 @@ h1, h2, h3, h4 { font-family: Arial, Helvetica, sans-serif; }
 .sf-menu .current_page_item a:visited,
 .sf-menu .current_page_item a:hover {
   color:#09C;
-  margin: 0 0 0 30px;
 }
 
 .sf-menu .current_page_item .page_item a,
@@ -1016,22 +1016,22 @@ height: 35px;
 margin: 6px 0 0 0;
 }
 #menu-item-67 {
-background-position-y: 10px;
+background-position: 0 10px;
 }
 #menu-item-249 {
-background-position-y: -20px;
+background-position: 0 -20px;
 }
 #menu-item-70 {
-background-position-y: -90px;
+background-position: 0 -90px;
 }
 #menu-item-72 {
-background-position-y: -120px;
+background-position: 0 -120px;
 }
 #menu-item-69 {
-background-position-y: -54px;
+background-position: 0 -54px;
 }
 #menu-item-68 {
-background-position-y: -20px;
+background-position: 0 -20px;
 }
 a.button-2{
 color: #A9D061;
@@ -1042,4 +1042,112 @@ padding: 0 0 3px 20px;
 
 div.generic-button group-button private a.group-button leave-group{
 color: #F00;
+}
+
+#bug {
+color: #FFF;
+border: 1px solid #e62c2c;
+border-radius: 5px 5px 0 0;
+width: 120px;
+background: #e96161 url('../images/bg-bug.jpg');
+height: 20px;
+text-align: center;
+padding-top: 6px;
+position: fixed;
+bottom: 0;
+right: 0;
+}
+#bug:hover {
+color: #F8D9D9;
+text-decoration: none;
+}
+
+/* - - - - - BOTÕES - - - -  */
+.generic-button.friendship-button a{
+	color: #FFFFFF;
+	padding: 4px;
+	background: #E94848;
+	border-radius: 5px;
+}
+.generic-button.friendship-button a:hover{
+	background: #E97979;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.generic-button.blog-button a, .generic-button.group-button a{
+	color: #FFFFFF;
+	padding: 4px;
+	background: #8AC3DA;
+	border-radius: 5px;
+}
+.generic-button.blog-button a:hover, .generic-button.group-button a:hover{
+	background: #A8D5E7;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.generic-button.group-button leave-group {
+	color: #F00;
+}
+/* BLOCO DO TOPO */
+h3.widgettitle-hb {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: center;
+}
+#header-block {
+	float: right;
+	width: 450px;
+	height: 140px;
+	margin: 25px 0 0 0;
+	border: 0px solid #000;
+
+}
+#header-block ul.header-block li.img-00 {
+	float: left;
+	width: 100px;
+	height: 120px;
+	background: #FFFFFF;
+	border: 1px solid #9B9B9B;
+	padding: 3px;
+	-webkit-transform: rotate(-8deg) ;
+	-moz-transform: rotate(-8deg) ;
+	-o-transform: rotate(-8deg) ;
+}
+#header-block ul.header-block li.img-01{
+	float: left;
+	width: 100px;
+	height: 120px;
+	padding: 3px;
+	background: #FFFFFF;
+	border: 1px solid #9B9B9B;
+	-webkit-transform: rotate(3deg) ;
+	-moz-transform: rotate(3deg) ;
+	-o-transform: rotate(3deg) ;
+}
+#header-block ul.header-block li.img-02{
+	float: left;
+	width: 100px;
+	height: 120px;
+	padding: 3px;
+	background: #FFFFFF;
+	border: 1px solid #9B9B9B;
+	-webkit-transform: rotate(2deg) ;
+	-moz-transform: rotate(2deg) ;
+	-o-transform: rotate(2deg) ;
+}
+#header-block ul.header-block li.img-03{
+	float: left;
+	width: 100px;
+	height: 120px;
+	padding: 3px;
+	background: #FFFFFF;
+	border: 1px solid #9B9B9B;
+	-webkit-transform: rotate(8deg) ;
+	-moz-transform: rotate(8deg) ;
+	-o-transform: rotate(8deg) ;
+}
+
+#header-block ul.header-block li img{
+	width: 100px;
+	height: 120px;
 }
