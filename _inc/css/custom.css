@@ -46,6 +46,7 @@ body {
 
 .bbp-login-form{
   padding: 0px;
+  margin: 0 0 10px 0;
 }
 
 .sf-menu a {
@@ -230,7 +231,7 @@ table { border-collapse: collapse; width: 100%; }
 hr { display: none; }
 img { padding: 0px; margin: 0px; border: none; text-align: center;}
 
-a:link { text-decoration: none; color : #0099cc; border: 0px; -moz-outline-style: none;}
+a:link { text-decoration: none; border: 0px; -moz-outline-style: none;}
 a:active { text-decoration: underline; color : #0099cc; border: 0px; -moz-outline-style: none;}
 a:visited { text-decoration: none; color : #0099cc; border: 0px; -moz-outline-style: none;}
 a:hover { text-decoration: underline; color : #025d87; border: 0px; -moz-outline-style: none;} 
@@ -503,9 +504,8 @@ div#sidebar div.item-list-tabs{
 }
 div#sidebar .widget_bpnextprofilewidget div.login-box,
 .bluebar{
-  margin-bottom: 25px;
-  padding: 10px 6px;
   overflow: hidden;
+  max-width: 170px;
 }
 
 div#sidebar .widget_bpnextprofilewidget,
@@ -520,7 +520,7 @@ div#content.two_column_left .padder {
   margin-left: 200px;
 }
 
-div#content.three_column .padder {
+div#content.three_column .padder { /* Three Column Layout */
   margin: 0 210px 0 200px;
   width: 570px;
 }
@@ -535,7 +535,7 @@ div#item-header div#message {
 
 div#item-header-content{
   width: auto;
-  
+  margin: 0 0 10px 0;
 }
 
 div#item-header-avatar {
@@ -570,21 +570,19 @@ div.item-list-tabs .feed{
 #whats-new-options{
   float: right;  
 }
-
-
 #destacado #item-nav{
-  margin-top: 5px;
-  width: 790px;
+	float: left;
+	width: 790px;
+	border: 1px solid #E6E6E6;
+	background: #F3F3F3;
+	border-radius: 5px;
 }
-
 #destacado #item-nav ul li{
   float: left;
   clear: none;
   width: auto;
-  margin: 4px;
-  padding: 4px;
+  padding: 0 5px;
 }
-
 #destacado #item-nav ul li a span{
   float: none;
 }
@@ -781,9 +779,7 @@ div#sidebar .padder h2 a:hover { color:#0099cc; text-decoration: none; }
 
 div#sidebar h3.widgettitle{
   z-index: 100;
-  float: none;
-  clear: both;
-  width: 99%;
+  margin: 0 0 10px 0;
   color: #0990ca;
 }
 
@@ -1098,56 +1094,40 @@ h3.widgettitle-hb {
 	float: right;
 	width: 450px;
 	height: 140px;
-	margin: 25px 0 0 0;
+	margin: 30px 0 0 0;
 	border: 0px solid #000;
 
 }
-#header-block ul.header-block li.img-00 {
+#header-block ul.header-block li img{
+	width: 100px;
+	height: 110px;
+}
+#header-block ul.header-block li.img-00, #header-block ul.header-block li.img-01, #header-block ul.header-block li.img-02,
+#header-block ul.header-block li.img-03 {
 	float: left;
 	width: 100px;
-	height: 120px;
+	height: 110px;
 	background: #FFFFFF;
 	border: 1px solid #9B9B9B;
 	padding: 3px;
+}
+#header-block ul.header-block li.img-00 {	
 	-webkit-transform: rotate(-8deg) ;
 	-moz-transform: rotate(-8deg) ;
 	-o-transform: rotate(-8deg) ;
 }
 #header-block ul.header-block li.img-01{
-	float: left;
-	width: 100px;
-	height: 120px;
-	padding: 3px;
-	background: #FFFFFF;
-	border: 1px solid #9B9B9B;
 	-webkit-transform: rotate(3deg) ;
 	-moz-transform: rotate(3deg) ;
 	-o-transform: rotate(3deg) ;
 }
 #header-block ul.header-block li.img-02{
-	float: left;
-	width: 100px;
-	height: 120px;
-	padding: 3px;
-	background: #FFFFFF;
-	border: 1px solid #9B9B9B;
 	-webkit-transform: rotate(2deg) ;
 	-moz-transform: rotate(2deg) ;
 	-o-transform: rotate(2deg) ;
 }
 #header-block ul.header-block li.img-03{
-	float: left;
-	width: 100px;
-	height: 120px;
-	padding: 3px;
-	background: #FFFFFF;
-	border: 1px solid #9B9B9B;
 	-webkit-transform: rotate(8deg) ;
 	-moz-transform: rotate(8deg) ;
 	-o-transform: rotate(8deg) ;
-}
-
-#header-block ul.header-block li img{
-	width: 100px;
-	height: 120px;
 }

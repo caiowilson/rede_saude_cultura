@@ -125,10 +125,6 @@ div#content.two_column_left .padder { /* Left Sidebar Layout */
 	margin-right: 0;
 	margin-left: 195px;
 }
-div#content.three_column .padder { /* Three Column Layout */
-	margin: 0 250px 0 200px;
-}
-
 /*--------------------------------------------------------------
 2.2 - Header
 --------------------------------------------------------------*/
@@ -173,7 +169,7 @@ html, body {
 	margin: 0 auto;
 }	
 #colophon {
-	padding:25px 25px 29px 25px;
+	padding:25px 25px 33px 25px;
 	width: 950px;
 	background: url(../images/bg-footer.jpg) repeat-x;
 	margin: 0 0 0 6px;
@@ -295,17 +291,6 @@ div#sidebar h3.widgettitle,
   clear: left;
   position: relative;
   font-size: 14px;
-  font-weight: bold;
-  padding: 3px 12px 5px;
-}	
-div#sidebar h3.widgettitle {
-	float: left;
-	width: 100%;
-	margin: -10px -12px 10px;
-	/*
-	background: #c1dbea url(../images/widgettitle.jpg) repeat-x left top;
-	*/
-	text-align: left;	
 }
 #wp-calendar caption {
 	margin: -10px -12px 10px;
@@ -1165,6 +1150,7 @@ form#whats-new-form h5 {
 }
 form#whats-new-form #whats-new-content #whats-new-textarea {
   padding: 0;
+  max-width: 560px;
 }
 div#whats-new-pic-preview-inner {
 	background-color: #F6F6F6;
@@ -1694,7 +1680,9 @@ form.standard-form textarea#message_content {
 	height: 200px;
 }
 form.standard-form#send-reply textarea {
-	width: 97.5%;
+	width: 500px;
+	height: 100px;
+	border: 1px solid #D5D5D5;
 }
 body.group-forum form.standard-form input[type=text],	
 body.group-forum form.standard-form textarea,
@@ -1883,14 +1871,14 @@ table tr.alt {
   border-top: 1px solid #eee;
 }
 table#message-threads a.button.confirm {
-	margin-left: 3px;
+	color: #F00;
 }
 table.notification-settings {
 	margin-bottom: 20px;
 	text-align: left;
 }
 table.notification-settings th.icon, table.notification-settings td:first-child { display: none; }
-table.notification-settings th.title { width: 80%; }
+table.notification-settings th.title { font-size: 18px; padding: 0; }
 table.notification-settings .yes, table.notification-settings .no { width: 40px; text-align: center; }
 table.notification-settings .title, table.notification-settings .yes, table.notification-settings .no {	font-weight: bold; }
 table.forum {
@@ -2250,7 +2238,7 @@ div#item-header div.generic-button, div#item-header a.button {
 	z-index: 999;
 }
 div#item-header div#message.info {
-	line-height: 80%;
+	display: none;
 }
 #forum-header {
 	min-height: 62px;
@@ -2283,7 +2271,6 @@ div.two_column div#topic-meta div.admin-links {
 }
 .entry-directory {
 	padding-bottom: 10px;
-	font-size: 14px;
 	line-height: 21px;
 }
 
@@ -2405,12 +2392,7 @@ ul li.loading a {
 div#item-nav ul li.loading a {
 	background-position: 88% 50%;
 }
-div#item-nav {
-	float: left;
-	margin-top: 190px;
-}
 body.groups.single-item div#item-nav {
-	margin-top: 208px;
 }
 div#object-nav.item-list-tabs,
 div#sub-nav.item-list-tabs {
@@ -2429,9 +2411,8 @@ div#sub-nav.item-list-tabs li {
 }
 div#object-nav.item-list-tabs li a,
 div#sub-nav.item-list-tabs li a {
-	padding: 4px 1px;
+	padding: 2px 5px;
 	background-color: transparent;
-	margin: 0;
 	color: #497EA8;
 }
 div#object-nav.item-list-tabs li.current a,
@@ -2540,7 +2521,7 @@ span.group-type {
 6.12 - Buttons
 --------------------------------------------------------------*/
 
-a.button, input[type=submit], input[type=button], input[type=reset], .bbp-submit-wrapper button {
+input[type=submit], input[type=button], input[type=reset], .bbp-submit-wrapper button {
 	background: #9fcb57 url(../images/button-gradient.png) top repeat-x;
 	* background: #c9e284; /* IE7 only */ 
 	border: 1px solid #adc671;
