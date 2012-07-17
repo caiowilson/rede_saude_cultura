@@ -16,18 +16,32 @@
 
   <?php if ( bp_has_groups() ) : while ( bp_groups() ) : bp_the_group(); ?>
   <?php  $group_is_visible = bp_group_is_visible(); ?>
-  <div id="destacado">
+		
 
+  		
+    <?php if ( is_active_sidebar('group') && bp_group_is_visible() ) : ?>
+	
+    <div id="content" class="three_column">
+
+		<?php  else: ?>
+		<div id="content" class="two_column_left">
+		
+			<?php endif; ?>
+
+			<div class="padder">
+
+			  <div id="destacado">
+  
       <?php do_action( 'bp_before_group_home_content' ) ?>
 
       <div id="item-header">
         <?php locate_template( array( 'groups/single/group-header.php' ), true ) ?>
       </div><!-- #item-header -->
-
+		
       <!-- Hide group navigation from forums -->
       <?php if ( bp_is_group_forum() && bp_group_is_visible() ) : ?>
-      <?php else : ?>
-
+      <?php else : ?>	
+	
       <div id="item-nav">                 
         <div class="item-list-tabs no-ajax" id="object-nav">
           <ul>
@@ -42,72 +56,67 @@
         </div>
       </div><!-- #item-nav -->
       
-      <?php endif; ?>    
+      <?php endif; ?>   	  
   </div>
+			
+			
+				<div id="item-body">
 
-    <?php if ( is_active_sidebar('group') && bp_group_is_visible() ) : ?>
-      <div id="content" class="three_column">
-    <?php  else: ?>
-      <div id="content" class="two_column_left">
-    <?php endif; ?>
+					<?php do_action( 'bp_before_group_body' );
 
-		<div class="padder">
+					if ( bp_is_group_admin_page() && bp_group_is_visible() ) :
+						locate_template( array( 'groups/single/admin.php' ), true );
 
-			<div id="item-body">
+					elseif ( bp_is_group_members() && bp_group_is_visible() ) :
+						locate_template( array( 'groups/single/members.php' ), true );
 
-				<?php do_action( 'bp_before_group_body' );
+					elseif ( bp_is_group_invites() && bp_group_is_visible() ) :
+						locate_template( array( 'groups/single/send-invites.php' ), true );
 
-				if ( bp_is_group_admin_page() && bp_group_is_visible() ) :
-					locate_template( array( 'groups/single/admin.php' ), true );
+						elseif ( bp_is_group_forum() && bp_group_is_visible() && bp_is_active( 'forums' ) && bp_forums_is_installed_correctly() ) : 
+							locate_template( array( 'groups/single/forum.php' ), true );
 
-				elseif ( bp_is_group_members() && bp_group_is_visible() ) :
-					locate_template( array( 'groups/single/members.php' ), true );
+					elseif ( bp_is_group_membership_request() ) :
+						locate_template( array( 'groups/single/request-membership.php' ), true );
 
-				elseif ( bp_is_group_invites() && bp_group_is_visible() ) :
-					locate_template( array( 'groups/single/send-invites.php' ), true );
+					elseif ( bp_group_is_visible() && bp_is_active( 'activity' ) ) :
 
-					elseif ( bp_is_group_forum() && bp_group_is_visible() && bp_is_active( 'forums' ) && bp_forums_is_installed_correctly() ) : 
-						locate_template( array( 'groups/single/forum.php' ), true );
+						locate_template( array( 'groups/single/activity.php' ), true );
 
-				elseif ( bp_is_group_membership_request() ) :
-					locate_template( array( 'groups/single/request-membership.php' ), true );
+					elseif ( bp_group_is_visible() ) :
+						locate_template( array( 'groups/single/members.php' ), true );
 
-				elseif ( bp_group_is_visible() && bp_is_active( 'activity' ) ) :
+					elseif ( !bp_group_is_visible() ) :
+						// The group is not visible, show the status message
 
-					locate_template( array( 'groups/single/activity.php' ), true );
+						do_action( 'bp_before_group_status_message' ); ?>
 
-				elseif ( bp_group_is_visible() ) :
-					locate_template( array( 'groups/single/members.php' ), true );
+						<div id="message" class="info">
+							<p><?php bp_group_status_message(); ?></p>
+						</div>
 
-				elseif ( !bp_group_is_visible() ) :
-					// The group is not visible, show the status message
+						<?php do_action( 'bp_after_group_status_message' );
 
-					do_action( 'bp_before_group_status_message' ); ?>
+					else :
+						// If nothing sticks, just load a group front template if one exists.
+						locate_template( array( 'groups/single/front.php' ), true );
 
-					<div id="message" class="info">
-						<p><?php bp_group_status_message(); ?></p>
-					</div>
+					endif;
 
-					<?php do_action( 'bp_after_group_status_message' );
+					do_action( 'bp_after_group_body' ); ?>
+	 
+				</div><!-- #item-body -->
 
-				else :
-					// If nothing sticks, just load a group front template if one exists.
-					locate_template( array( 'groups/single/front.php' ), true );
+				<?php do_action( 'bp_after_group_home_content' ) ?>
 
-				endif;
+				<?php endwhile; endif; ?>
+				
+				
+			</div><!-- .padder -->
+		</div><!-- #content -->
 
-				do_action( 'bp_after_group_body' ); ?>
- 
-			</div><!-- #item-body -->
-
-			<?php do_action( 'bp_after_group_home_content' ) ?>
-
-			<?php endwhile; endif; ?>
-		</div><!-- .padder -->
-	</div><!-- #content -->
-
-  <?php if ( is_active_sidebar('group') && $group_is_visible ) : ?>
+	<?php if ( is_active_sidebar('group') && $group_is_visible ) : ?>
 		<?php locate_template( array( 'sidebar-group.php' ), true ) ?>
 	<?php endif; ?>
 
-<?php get_footer() ?>
+	<?php get_footer() ?>

@@ -4,16 +4,12 @@ Copy the styles you wish to edit from _inc/css/default.css in the parent theme i
  
 The same rule applies to PHP files. Copy PHP files you wish to edit from BuddyBoss into this child theme, and then edit them here.
 */
-
-
 body {
 	background: #CDE6E9;
 	color:		#656565;
 }
-
 #wrapper {
   background: url('../images/bg_wrapper.jpg');
-
 }
 #header {
 	height: 190px;
@@ -32,23 +28,13 @@ body {
   background: url(../images/topo.jpg);
   font-weight: bold;
 }
-
 .sf-menu {
   border-left: none;
-  /*
-	background: #16B2B1;
-	width: 980px;
-	padding: 0 10px;
-	
-	bottom: 10px; /* allows room for nav-shadow */
-
 }
-
 .bbp-login-form{
   padding: 0px;
   margin: 0 0 10px 0;
 }
-
 .sf-menu a {
 	/*
 	height: 23px;
@@ -58,42 +44,32 @@ body {
   border-right: none;
   border-bottom: none;
 }
-
 .sf-menu li {
   margin-right: 4px;
   margin-left: 4px;
-  
 }
-
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
 	top: 45px;
 }
-
 a > .sf-sub-indicator {
 	top: 1.2em;
 }
-
 div#container {
   margin: 0 3px;
   width: auto;
   background: url('../images/bg_left.jpg') repeat-y;
-  
 }
 
 div#item-header-avatar {
   left: -170px;
 }
-
 #item-header-avatar a img{
   width: 150px;
 }
-
 #destacado {
-  float: right;
-  width: 795px;
+  width: 700px;
 }
-
 .left_column,
 .right_column {
   margin-top: 6px;
@@ -104,24 +80,19 @@ div#sidebar.left_column {
   margin-right: -198px;
   padding-right: 3px;
 }
-
 div#sidebar.left_column{
   border-right: 0px solid #C0D3E1;
 }
-
 div#sidebar.left_column .padder {
   padding: 0px ;
 }
-
 .next-user-avatar img{
   margin: 5px;
 }
-
 ul.main-nav {
   margin-top: 61px !important;
   margin-right: 5px !important;
 }
-
 /* bloco de reportar bug */
 .reportar-bug {
     margin: 2px 10px 0 0;
@@ -130,36 +101,26 @@ ul.main-nav {
     top: 0;
     left: 0;
     z-index: 1000;
-
     font-weight: bold;
-
     background-color: #EAF6FD;
-
     border:hidden 3px #9BB6D2;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
-
 .reportar-bug img {
     width:20px;
 }
-
-#sidebar.group-sidebar {
-
-}
-
+#sidebar.group-sidebar {}
 div#sidebar.group-sidebar .no-search {
   margin-top: 0px;
 }
-
 .widget_buddypress_friends img{
   width: 43px;
   height: 43px;
   margin: 3px;
   padding: 2px;
 }
-
 /* retirado do site principal do NEXT */
 #barra-brasil {
     position:relative;
@@ -201,17 +162,13 @@ div#sidebar.group-sidebar .no-search {
     text-indent: -9999px;
     background: #00500F url(../images/brasil.png) no-repeat 0 4px;
 }
-
-
 div#fiocruz { 
 	background:#085222; 
 	height:33px; 
 }
-
 div#fiocruz {
 	background: url("http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/bg_fiocruz.jpg") repeat-x;
 }
-
 /* Begin Typography & Colors */
 * { margin: 0; padding: 0; }
 body { 
@@ -222,7 +179,6 @@ body {
 	margin-top: 0px; 
 	color:#35383d;
 }
-
 legend { display: none; }
 fieldset { border: none; }
 ul, ol { list-style: none; }
@@ -392,10 +348,8 @@ color: #f7950c;
 .superfish-menu li:hover, .superfish-menu li.sfHover,
 .superfish-menu a:focus, .superfish-menu a:hover, .superfish-menu a:active {
   background:   f4f4f4;
-  outline:    0;
-  
+  outline:    0;  
 }
-
 /*** arrows **/
 .superfish-menu a.sf-with-ul {
   padding-right:  2.25em;
@@ -424,7 +378,6 @@ li:hover > a > .sf-sub-indicator,
 li.sfHover > a > .sf-sub-indicator {
   background-position: -10px -100px; /* arrow hovers for modern browsers*/
 }
-
 /* point right for anchors in subs */
 .superfish-menu ul .sf-sub-indicator { background-position:  -10px 0; }
 .superfish-menu ul a > .sf-sub-indicator { background-position:  0 0; }
@@ -436,8 +389,6 @@ li.sfHover > a > .sf-sub-indicator {
 .superfish-menu ul li.sfHover > a > .sf-sub-indicator {
   background-position: -10px 0; /* arrow hovers for modern browsers*/
 }
-
-
 /*** adding sf-vertical in addition to sf-menu creates a vertical menu ***/
 .sf-vertical, .sf-vertical li {
   width: 185px;
@@ -448,7 +399,6 @@ li.sfHover > a > .sf-sub-indicator {
   left: 185px; /* match ul width */
   top:  0;
 }
-
 /*** alter arrow directions ***/
 .sf-vertical .sf-sub-indicator { background-position: -10px 0; } /* IE6 gets solid image only */
 .sf-vertical a > .sf-sub-indicator { background-position: 0 0; } /* use translucent arrow for modern browsers*/
@@ -461,70 +411,64 @@ li.sfHover > a > .sf-sub-indicator {
 .sf-vertical li.sfHover > a > .sf-sub-indicator {
   background-position: -10px 0; /* arrow hovers for modern browsers*/
 }
-
-
-
 div#user-menu {
   margin-top: 2px;
   float: left;
 }
-
 div.item-list-tabs.activity-type-tabs {
   font-size: 11px;
 }
-
 div.item-list-tabs.activity-type-tabs li a{
   padding: 7px 8px;  
 }
-
 /*  sidebar  */
-
 div#sidebar {   
   margin-left: -220px;
   margin-top: 50px;
   width: 220px;
 }
-
 div#sidebar.group-sidebar {
   margin-top: 15px;
 }
-
 div#sidebar .widget {
   margin-bottom: 5px;
   padding: 10px 3px;
   overflow: visible;
   border: none;
+  clear: both;
 }
-
+div#item-actions, div#item-actions h3, div#item-actions ul li h5 a{
+	/* width: 160px;  necessary for IE7 */
+	color: #A5A5A5;
+}
+div#item-actions, div#item-actions h3, div#item-actions ul li h5 a:hover{
+	color: #4FA5CE;
+	text-decoration: none;
+}
 div#sidebar .widget,
 div#sidebar div.item-list-tabs,
 div#sidebar div.item-list-tabs{
   background: none;
-  width: 170px;
+  width: 175px;
 }
 div#sidebar .widget_bpnextprofilewidget div.login-box,
 .bluebar{
   overflow: hidden;
   max-width: 170px;
 }
-
 div#sidebar .widget_bpnextprofilewidget,
   background-color: #fff;
 }
-
 div#sidebar {
   margin-top: 55px;
 }
-
 div#content.two_column_left .padder {
   margin-left: 200px;
 }
-
 div#content.three_column .padder { /* Three Column Layout */
-  margin: 0 210px 0 200px;
+  margin: 0 210px 0 190px;
   width: 570px;
 }
-
 div#item-header,
 div#item-header-content,
 div#item-body,
@@ -532,12 +476,10 @@ div#item-header div#message {
   float: left;
   width: 99%;
 }
-
 div#item-header-content{
   width: auto;
   margin: 0 0 10px 0;
 }
-
 div#item-header-avatar {
   position: relative;
   left: 0px;
@@ -546,27 +488,22 @@ div#item-header-avatar {
   float: left;
   padding: 3px;
 }
-
 div#group-name {
   float: none;
 }
-
 div#item-body div#subnav.item-list-tabs ul li,
 div.item-list-tabs ul li,
 ul.button-nav li {
   margin: 0 2px 0 0;
   float: left;
 }
-
 div.item-list-tabs .feed{
   position: absolute;
   right: 8px;
 }
-
 #whats-new-content .bpfb_actions_container{
   float: left;
 }
-
 #whats-new-options{
   float: right;  
 }
@@ -586,18 +523,15 @@ div.item-list-tabs .feed{
 #destacado #item-nav ul li a span{
   float: none;
 }
-
 .ajax-loader {
   display: none;
 }
-
 ul.item-list li div.item-title, ul.item-list li h4 {
   font-weight: bold;
   font-size: 17px;
   width: auto;
   margin: 0;
 }
-
 div#item-header div#item-meta {
   color: #333;
   font-size: 16px;
@@ -606,43 +540,34 @@ div#item-header div#item-meta {
   top: 5px; 
   padding: 0px 5px;
 }
-
 #item-buttons{
   margin: 5px 3px 5px;
   padding-top: 10px;
   clear: both;
 }
-
 ul.item-list li {
   position: relative;
   padding: 10px 0;
   border-bottom: 1px solid #DDD;
 }
-
 div#sidebar div.item-avatar img {
   margin: 1px;
   width: 34px;
   height: 34px;
 }
-
 div#sidebar ul.item-list .item {
   margin-left: 0px;
   word-wrap: normal;
 }
-
 div#object-nav.item-list-tabs li, div#sub-nav.item-list-tabs li {
   width: 170px;
 }
-
 /* resolver o problema do colabpress de deixar o form invisivel por padão */
 #item-body .hide-on-load .inside{
   display: block !important;
 }
-
-
 /* Breadcrumb +++++++++++++++++++++++++++++++++++++++
  */
-
 #breadcrumb{
  color: #656565;
  margin: -20px 0 0 0;
@@ -650,7 +575,6 @@ div#object-nav.item-list-tabs li, div#sub-nav.item-list-tabs li {
  height: 40px;
  background: url('../images/bg_naveg.jpg');
 }
-
 .breadcrumb { 
   list-style: none; 
   overflow: hidden; 
@@ -718,9 +642,6 @@ div#object-nav.item-list-tabs li, div#sub-nav.item-list-tabs li {
 .breadcrumb li:last-child a:after { border: 0; }
 .breadcrumb li a:hover { background: hsla(34,85%,25%,1); }
 .breadcrumb li a:hover:after { border-left-color: hsla(34,85%,25%,1) !important; }
-
-
-
 /* Logo
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .logo { overflow: hidden; border-bottom: solid 6px #e6f1f3; margin-bottom: 30px;}
@@ -731,10 +652,7 @@ div#object-nav.item-list-tabs li, div#sub-nav.item-list-tabs li {
 .logo .txt h1 { font: bold 55px/50px "Arial"; letter-spacing: -3px; text-transform: lowercase; padding-bottom: 5px;}
 .logo .txt h1 a, .logo .txt h1 a:visited, .logo .txt h1 a:hover { text-decoration: none; color:#272d36;}
 .logo .txt p.desc { font: bold 14px/14px "Arial"; letter-spacing: -1px; display: block; color:#2abada;}
-
 .logo .img { padding-bottom: 15px; }
-
-
 /* SL ()
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .SL { width: 520px; float: left; padding-left: 70px;}
@@ -746,21 +664,14 @@ div#object-nav.item-list-tabs li, div#sub-nav.item-list-tabs li {
   margin-bottom: 15px; border-bottom: solid 1px #ccc;
 }
 .note {  background:url( ../images/note-icon.png) no-repeat left 2px; padding-left: 14px; color:#669900; font-size: 11px;}
-
 .error { color:#cc0000; font-size: 11px; font-weight: bold;}
-
-
-
 /* Post Single
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .post, .attachment { width: 100%; position: relative;}
 /**/ * html .post, .attachment { width: 99%;} /**/ 
-
-
 div#sidebar .padder {
   padding-bottom: 15px;
 }
-
 div#sidebar .padder h1{
   margin-left: 10px;
 }
@@ -768,28 +679,17 @@ div#sidebar .padder h1,
 div#sidebar .padder h1 a,
 div#sidebar .padder h1 a:visited {
   color:#2A6891 !important;
-  
   letter-spacing: -1px;
 }
 div#sidebar .padder h1 a:hover { color:#0099cc; text-decoration: none; }
-
 div#sidebar .padder h2 { color:#272d36; font: normal 34px/34px "Helvetica"; letter-spacing: -1px; }
 div#sidebar .padder h2 a, .p-head h2 a:visited { color:#272d36; }
 div#sidebar .padder h2 a:hover { color:#0099cc; text-decoration: none; }
-
 div#sidebar h3.widgettitle{
   z-index: 100;
   margin: 0 0 10px 0;
   color: #0990ca;
 }
-
-/* blue
-div#sidebar h3.widgettitle{
-  z-index: 100;
-  color: #fff;
-  background: #16B2B1;
-}
-*/
 .p-cat { font: normal 11px/14px 'Arial'; text-transform: uppercase; color:#999;}
 .p-cat a, .p-cat a:visited, .p-cat a:hover { text-decoration: underline; color:#999; padding-right: 5px;}
 
@@ -810,18 +710,14 @@ div#sidebar h3.widgettitle{
 .p-con blockquote { font: italic 14px/19px Georgia, "Times New Roman", Times, serif; padding: 10px 20px; margin: 10px 0px; background: #ecf6f8; }
 .p-con blockquote p { font: italic 14px/19px Georgia, "Times New Roman", Times, serif; }
 .p-con blockquote li { padding: 2px 0px 2px 13px; list-style-type: none; font-size: 12px; line-height: 17px;}
-
-
 .p-det { margin-top: 15px;}
 .p-det li { color:#7f7f7f; display: inline; padding: 4px 0px 6px 30px; margin-right: 10px; }
 .p-det li.p-det-com { background: url("images/p-det-com.png") left center no-repeat; }
 .p-det li.p-det-com a { font-weight: bold; letter-spacing: -1px;}
 .p-det li.p-det-tag { background: url("images/p-det-tag.png") left center no-repeat; }
 .p-det li a,.p-det a:visited { font: normal 14px/18px "Arial"; margin-right: 3px;}
-
 .p-con .wpunlimited_bookmarks strong { font-weight: normal; color:#999; padding-bottom: 2px; font-size: 10px; text-transform:uppercase; }
 .p-con .wpunlimited_bookmarks a img { display:inline; border:none; padding:0; margin:0; margin-top: 5px; }
-
 /* Images
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
 .p-con img { padding: 0; max-width: 100%; }
@@ -830,16 +726,12 @@ div#sidebar h3.widgettitle{
 .p-con img.alignleft { margin: 5px 20px 10px 0; display: inline; border: solid 4px #eee; padding: 1px;}
 .p-con .alignright { float: right; }
 .p-con .alignleft { float: left }
-
 /* Navigation
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
 .nav { overflow: hidden; padding-bottom: 20px;}
 .nav .left a { float: left; background:url(images/nav-left.png) no-repeat left 0px; padding-left: 20px; }
 .nav .right a { float: right; background:url(images/nav-right.png) no-repeat right 0px; padding-right: 20px; }
 .nav a, .nav a:visited { font: bold 14px/16px "Arial"; letter-spacing: -1px; }
-
-
-
 /* Comments
 ############################################################################################################## */
 .comments-list { padding-top: 20px;}
@@ -856,13 +748,10 @@ div#sidebar h3.widgettitle{
 * html .comments-list p.avt { left: -60px; }
 .comments-list p.date { font-size: 11px; margin-bottom: 5px;}
 .comments-list p.date a, .comments-list p.date a:visited, .comments-list p.date a:hover { color:#96b1bc; text-decoration: underline;}
-
 .comments-list .con { font: normal 12px/17px "Verdana"; margin-right: 90px; color:#333;}
 .comments-list .con p { font: normal 12px/17px "Verdana"; padding: 5px 0px; margin: 0px; color:#333;}
 .comments-list .con blockquote { font: italic 14px/19px Georgia, "Times New Roman", Times, serif; color:#666; margin: 10px 20px; }
 .comments-list .con blockquote p { font: italic 14px/19px Georgia, "Times New Roman", Times, serif; color:#666; }
-
-
 /* Comments Form
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .comments-form { background: #e1f4fc; padding: 20px; margin: 10px 0px;}
@@ -873,20 +762,11 @@ div#sidebar h3.widgettitle{
 .comments-form input.formid { border: 1px solid #a8d3e4; background: #fff url(images/form-name-bkg.png) no-repeat left; padding: 5px 5px 5px 40px;}
 .comments-form input.formemail { border: 1px solid #a8d3e4; background: #fff url(images/form-email-bkg.png) no-repeat left; padding: 5px 5px 5px 40px;}
 .comments-form input.formuri { border: 1px solid #a8d3e4; background: #fff url(images/form-uri-bkg.png) no-repeat left; padding: 5px 5px 5px 40px;}
-
 .comments-form textarea { border: 1px solid #a8d3e4; background: #fff; padding: 4px; width: 97%;}
 .comments-form .button { border: 1px solid #a8d3e4; background: url(images/button-post-comment.png) no-repeat left; color:#fff; width: auto; font-size: 11px; font-weight: bold; padding: 4px 6px 4px 38px;}
-
-
-
-
-
-
-
 /* Side Right 
 ############################################################################################################## */
 .SR { width: 300px; margin-right: 30px; padding-bottom: 30px; float: right;}
-
 /* Search 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .blueblock { background: #3d96d5 url(images/search-bkg.png) no-repeat left bottom; right: 0px; padding: 15px; overflow: hidden;}
@@ -900,13 +780,11 @@ div#sidebar h3.widgettitle{
 .SR .syn li a {color:#fff; }
 .SR .syn li a:visited {color:#fff; }
 .SR .syn li a:hover {color:#fff; }
- 
-/* About Blog 
+ /* About Blog 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .SR .about { background: #57abe6 url(images/about-bkg.png) no-repeat left top; padding: 20px 15px 15px 15px; color:#fff;}
 .SR .about h3 { font-size: 24px; letter-spacing: -1px; color:#fff;}
 .SR .about p { padding: 5px 0px; margin: 0px; font-size: 13px; line-height: 16px;}
-
 div.canais { background:#DFF3F7; padding:16px 14px; height:70px; }
 div.canais h4 { font: bold 16px Arial, Helvetica, sans-serif; color:#9C0; margin-bottom:8px; }
 div.canais ul li  { float:left; margin:0 4px 0 0;  }
@@ -941,16 +819,12 @@ div.canais ul li  { float:left; margin:0 4px 0 0;  }
 .SR .recent .tabs li a.active, .SR .recent .tabs li a:hover { background: #4a6969 url(images/tabs-active.png) no-repeat bottom center; color: #fff; text-decoration: none; }
 .SR .recent a, .SR .recent a:visited { color:#247682; text-decoration: underline;}
 .SR .recent a:hover { color:#003333; text-decoration: underline;}
-
 #tab-comments { display: none; margin-bottom: 5px; }
 #tab-comments li { background: url(images/tabs-arrow.png) no-repeat left 10px; padding: 4px 0px 4px 6px; border-bottom: solid 1px #c5ded7; font-size: 11px; color:#5e8a89;}
 #tab-comments li a { display: block;}
 #tab-posts { margin-bottom: 5px; font-size: 11px; }
 #tab-posts li { background: url(images/tabs-arrow.png) no-repeat left 8px; line-height: 14px; padding: 1px 0px 1px 6px;}
 #tab-tags { display: none; margin-bottom: 5px; font-family: "Verdana"; line-height: 22px;}
-
-
-
 /* widget
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .SR .widget { background: #e1f3ee; padding: 15px; margin-bottom: 3px; color:#5e8a89;}
@@ -958,16 +832,12 @@ div.canais ul li  { float:left; margin:0 4px 0 0;  }
 .SR .widget li { background: url(images/tabs-arrow.png) no-repeat left 6px; padding: 2px 0px 2px 6px; font-size: 11px; color:#5e8a89;}
 .SR .widget a, .SR .widget a:visited { color:#247682; text-decoration: underline;}
 .SR .widget a:hover { color:#003333; text-decoration: underline;}
-
 .SR .widget_tag_cloud { line-height: 22px;}
-
 .SR .widget_calendar table { width: 100%;}
 .SR .widget_calendar table td { text-align: center; padding: 3px; }
 .SR .widget_calendar caption { background: #d2e9e3; padding: 5px 0px; margin-bottom: 10px;}
 .SR .widget_calendar #today { background: #d2e9e3;}
-
 .SR .widget_search #s { width: 160px; border: solid 1px #b5d6cd; padding: 3px; margin-bottom: 5px;}
-
 .SR .widget_flickrRSS { overflow: hidden; padding: 15px 0px 15px 15px;}
 /**/ *html .SR .widget_flickrRSS { height: 1%;} /**/ 
 .SR .widget_flickrRSS h3 { width: 270px; margin-bottom: 10px;}
@@ -975,8 +845,6 @@ div.canais ul li  { float:left; margin:0 4px 0 0;  }
 .SR .widget_flickrRSS li { background: none; list-style-type: none; display: inline; padding: 0px; float: left; margin: 0px 7px 7px 0px;}
 .SR .widget_flickrRSS li a img, .SR .widget_flickrRSS li a:visited img { border: solid 1px #fff; width: 60px; height: 60px;}
 .SR .widget_flickrRSS li a:hover img { border: solid 1px #000;}
-
-
 /* Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .footer { width: 870px; margin: 0 auto; padding: 15px 0px 15px 90px;}
 .footer p { padding: 0px; margin: 0px; }
@@ -984,99 +852,91 @@ div.canais ul li  { float:left; margin:0 4px 0 0;  }
 .footer p.copy a, .footer p.copy a:visited, .footer p.copy a:hover { color:#1c3e4d; text-decoration: underline;}
 .footer p.theme { padding-top: 2px; color:#6c8e9d; }
 .footer p.theme a, .footer p.theme a:visited, .footer p.theme a:hover { color:#6c8e9d; text-decoration: underline;}
-
 .p-head span.dt { display:block; margin:5px 0; font:9px Arial, Helvetica, sans-serif; color:#999; }
-
 div.SR div.googlegroup, div.SR div.delicious, div.SR div.youtube { padding:12px; background:#F8F8F8; border-bottom:1px solid #FFF; }
-
-
 /** alguns consertos **/
 .ui-helper-hidden-accessible {
-  clip: auto !important;
+	clip: auto !important;
 }
-
 .group-subscription-options{
-  z-index: 20;
-  display: none;
+	z-index: 20;
+	display: none;
 }
-
 .group-subscription-div{
-  box-shadow: 1px 2px 2px 3px #efefef;
-  border-radius: 6px;
-  padding: 6px;
-  margin-bottom: 10px;
+	box-shadow: 1px 2px 2px 3px #efefef;
+	border-radius: 6px;
+	padding: 6px;
+	margin-bottom: 10px;
 }
 #menu-item-67, #menu-item-249, #menu-item-70, #menu-item-72, #menu-item-69, #menu-item-68 {
-background: url(../images/icon-menu.png) no-repeat;
-height: 35px;
-margin: 6px 0 0 0;
+	background: url(../images/icon-menu.png) no-repeat;
+	height: 35px;
+	margin: 6px 0 0 0;
 }
 #menu-item-67 {
-background-position: 0 10px;
+	background-position: 0 10px;
 }
 #menu-item-249 {
-background-position: 0 -20px;
+	background-position: 0 -20px;
 }
 #menu-item-70 {
-background-position: 0 -90px;
+	background-position: 0 -90px;
 }
 #menu-item-72 {
-background-position: 0 -120px;
+	background-position: 0 -120px;
 }
 #menu-item-69 {
-background-position: 0 -54px;
+	background-position: 0 -54px;
 }
 #menu-item-68 {
-background-position: 0 -20px;
+	background-position: 0 -20px;
 }
 a.button-2{
-color: #A9D061;
-font-size: 12px;
-background: url(../images/plus.png) no-repeat;
-padding: 0 0 3px 20px;
+	color: #A9D061;
+	font-size: 12px;
+	background: url(../images/plus.png) no-repeat;
+	padding: 0 0 3px 20px;
 }
 
 div.generic-button group-button private a.group-button leave-group{
-color: #F00;
+	color: #F00;
 }
-
 #bug {
-color: #FFF;
-border: 1px solid #e62c2c;
-border-radius: 5px 5px 0 0;
-width: 120px;
-background: #e96161 url('../images/bg-bug.jpg');
-height: 20px;
-text-align: center;
-padding-top: 6px;
-position: fixed;
-bottom: 0;
-right: 0;
+	color: #FFF;
+	border: 1px solid #e62c2c;
+	border-radius: 5px 5px 0 0;
+	width: 120px;
+	background: #e96161 url('../images/bg-bug.jpg');
+	height: 20px;
+	text-align: center;
+	padding-top: 6px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
 }
 #bug:hover {
 color: #F8D9D9;
 text-decoration: none;
 }
-
 /* - - - - - BOTÕES - - - -  */
-.generic-button.friendship-button a{
+.generic-button.friendship-button a, a.button.reject.confirm{
 	color: #FFFFFF;
 	padding: 4px;
 	background: #E94848;
 	border-radius: 5px;
 }
-.generic-button.friendship-button a:hover{
+.generic-button.friendship-button a:hover, a.button.reject.confirm:hover{
 	background: #E97979;
 	color: #FFFFFF;
 	text-decoration: none;
 }
-.generic-button.blog-button a, .generic-button.group-button a{
+.generic-button.blog-button a, .generic-button.group-button a, a.button.accept{
 	color: #FFFFFF;
 	padding: 4px;
 	background: #8AC3DA;
 	border-radius: 5px;
 }
-.generic-button.blog-button a:hover, .generic-button.group-button a:hover{
+.generic-button.blog-button a:hover, .generic-button.group-button a:hover, a.button.accept:hover{
 	background: #A8D5E7;
 	color: #FFFFFF;
 	text-decoration: none;
@@ -1092,21 +952,19 @@ h3.widgettitle-hb {
 }
 #header-block {
 	float: right;
-	width: 450px;
 	height: 140px;
-	margin: 30px 0 0 0;
+	margin: 50px 0 0 0;
 	border: 0px solid #000;
-
 }
 #header-block ul.header-block li img{
-	width: 100px;
-	height: 110px;
+	width: 80px;
+	height: 80px;
 }
 #header-block ul.header-block li.img-00, #header-block ul.header-block li.img-01, #header-block ul.header-block li.img-02,
 #header-block ul.header-block li.img-03 {
 	float: left;
-	width: 100px;
-	height: 110px;
+	width: 80px;
+	height: 80px;
 	background: #FFFFFF;
 	border: 1px solid #9B9B9B;
 	padding: 3px;
