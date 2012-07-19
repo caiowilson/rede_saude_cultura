@@ -102,23 +102,28 @@ div#content {
 	float: left;
 	width: 100%;
 }
-div#content .left-menu {
+div#content_inicial {
+	float: left;
+	width: 100%;
+	background: #FFFFFF;
+}
+div#content .left-menu, div#content_inicial .left-menu {
 	float: left;
 	width: 170px;
 }
-div#content .main-column {
+div#content .main-column, div#content_inicial .main-column {
 	margin-left: 190px;
 }
-div#content .padder { /* Full Width Layout */
+div#content .padder, div#content_inicial .padder { /* Full Width Layout */
 	margin-right: 0;
 	padding: 0;
 	position: relative;
 	min-height: 400px;
 }
-div#content.two_column .padder { /* Right Sidebar Layout */
+div#content.two_column .padder, div#content_inicial.two_column .padder { /* Right Sidebar Layout */
 	margin-right: 250px;
 }
-div#content.two_column_left .padder { /* Left Sidebar Layout */
+div#content.two_column_left .padder, div#content_inicial.two_column_left .padder { /* Left Sidebar Layout */
 	margin-right: 0;
 	margin-left: 195px;
 }
