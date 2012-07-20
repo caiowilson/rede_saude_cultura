@@ -28,7 +28,9 @@
 					</div>
 				</div>
 				<div id="icones">
-					<img src="footer-icone.jpg">
+					<a class="fiocruz" href="#">&nbsp;</a>
+					<a class="governo" href="#">&nbsp;</a>
+					<a class="mcultura" href="#">&nbsp;</a>
 				</div>
 				<div class="clr"></div>
 				<?php do_action( 'bp_footer' ) ?>

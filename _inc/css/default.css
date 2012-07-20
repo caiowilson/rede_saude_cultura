@@ -100,7 +100,7 @@ body.activity-permalink div#container {
 
 div#content {
 	float: left;
-	width: 100%;
+	width: 763px;
 }
 div#content_inicial {
 	float: left;
@@ -121,12 +121,15 @@ div#content .padder, div#content_inicial .padder { /* Full Width Layout */
 	min-height: 400px;
 }
 div#content.two_column .padder, div#content_inicial.two_column .padder { /* Right Sidebar Layout */
-	margin-right: 250px;
+	
 }
 div#content.two_column_left .padder, div#content_inicial.two_column_left .padder { /* Left Sidebar Layout */
-	margin-right: 0;
-	margin-left: 195px;
 }
+
+div#content.three_column, div#content_inicial.three_column .padder { /* Left Sidebar Layout */
+	width: 570px;
+}
+
 /*--------------------------------------------------------------
 2.2 - Header
 --------------------------------------------------------------*/
@@ -171,7 +174,7 @@ html, body {
 	margin: 0 auto;
 }	
 #colophon {
-	padding:25px 25px 33px 25px;
+	padding:25px 25px 27px 25px;
 	width: 950px;
 	background: url(../images/bg-footer.jpg) repeat-x;
 	margin: 0 0 0 6px;
@@ -200,9 +203,8 @@ border: 0px solid #000;
 	color: #727272;
 }
 #footer #icones {
-width: 300px;
 float: left;
-margin: 0 0 0 100px;
+margin: 0 0 0 50px;
 border: 0px solid #000;
 }
 #footer #icones .next, #footer #icones .wordpress, #footer #icones .budypress{
@@ -242,7 +244,6 @@ clear: both;
 div#sidebar {
 	float: left;
 	width: 240px;
-	margin-left: -240px;
 	margin-top: 50px;
 	position: relative;
 	z-index: 10;
@@ -2528,7 +2529,7 @@ input[type=submit], input[type=button], input[type=reset], .bbp-submit-wrapper b
 	overflow: visible; /* IE7 Fix */
 	display: inline-block; /* IE7 Fix */	
 }
-a.button:hover, a.button:focus, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, div.generic-button a:hover, .bbp-submit-wrapper button:hover {
+a.button:hover, a.button:focus, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .bbp-submit-wrapper button:hover {
 	border-color: #93ac56;
 	* background: #c9e284; /* IE7 only */
 	color: #89AA3A;

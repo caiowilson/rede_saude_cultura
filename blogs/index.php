@@ -24,7 +24,7 @@
   <?php endif; ?>
 
 		<div class="padder">
- 
+			<div id="destacado">
 		<form action="" method="post" id="blogs-directory-form" class="dir-form">
 			
 			<h1><?php the_title(); ?></h1><?php if ( is_user_logged_in() && bp_blog_signup_enabled() ) : ?>
@@ -76,7 +76,7 @@
 			<?php wp_nonce_field( 'directory_blogs', '_wpnonce-blogs-filter' ); ?>
 
 		</form><!-- #blogs-directory-form -->
-
+			</div>
 		</div><!-- .padder -->
 	</div><!-- #content -->
 	

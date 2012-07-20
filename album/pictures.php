@@ -1,6 +1,15 @@
 <?php get_header(); ?>
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
-  <div id="destacado">
+  
+
+   <?php if ( is_active_sidebar('sidebar.php') ) : ?> 
+     <div id="content" class="three_column">  
+   <?php else: ?>
+     <div id="content" class="two_column_left">  
+   <?php endif; ?>
+
+		<div class="padder">
+		<div id="destacado">
       <div id="item-header">
         <?php locate_template( array( 'members/single/member-header.php' ), true ) ?>
       </div>    
@@ -12,14 +21,6 @@
         </div>
       </div>
   </div>
-
-   <?php if ( is_active_sidebar('sidebar.php') ) : ?> 
-     <div id="content" class="three_column">  
-   <?php else: ?>
-     <div id="content" class="two_column_left">  
-   <?php endif; ?>
-
-		<div class="padder">
 			<div id="item-body">
 				<div class="item-list-tabs no-ajax" id="subnav">
 					<ul>

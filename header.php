@@ -47,9 +47,7 @@ jQuery(document).ready(function() {
 </script>
 */ ?>
 <?php if ( is_user_logged_in() ) : ?>
-<div class="reportar-bug">
-  <a href="http://www.next.icict.fiocruz.br/ris/groups/problemas-e-erros-nos-sistemas-do-next-1723188386/forum/" target="_blank" ><img src="<?php bloginfo('stylesheet_directory'); ?>/_inc/images/tools-report-bug.png" align="left" /> Clique aqui para reportar um Erro </a>
-</div>
+
 <?php endif; ?>
 
 		<?php do_action( 'bp_before_header' ) ?>

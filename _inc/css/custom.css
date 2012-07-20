@@ -68,7 +68,8 @@ div#item-header-avatar {
   width: 150px;
 }
 #destacado {
-  width: 700px;
+  float: left;
+  width: 100%;
 }
 .left_column,
 .right_column {
@@ -77,7 +78,7 @@ div#item-header-avatar {
 div#sidebar.left_column {
   margin-left: 0;
   width: 194px;
-  margin-right: -198px;
+  margin-right: 0px;
   padding-right: 3px;
 }
 div#sidebar.left_column{
@@ -213,6 +214,13 @@ h1, h2, h3, h4 { font-family: Arial, Helvetica, sans-serif; }
   font-weight: bolder;
   position: absolute;
   right: 2.1em;
+  color: #f4f4f4;
+}
+.bp-next-pack-user-menu li#bp-adminbar-notifications-menu span{
+  font-weight: bolder;
+  position: absolute;
+  right: 2.1em;
+  color: #F00;
 }
 
 .sf-menu {
@@ -355,6 +363,19 @@ color: #f7950c;
   padding-right:  2.25em;
   min-width:    1px; /* trigger IE7 hasLayout so spans position accurately */
 }
+#bp-adminbar-notifications-menu a.sf-with-ul {
+	
+}
+.superfish-menu .aviso a {
+  border-left:  4px solid #F00;
+  color: #F00;
+  padding:    .75em 10px;
+  width: 132px;
+  margin: 2px 0 0 0;
+  background: #f4f4f4;
+  text-decoration:none;
+}
+
 .sf-sub-indicator {
   position:   absolute;
   display:    block;
@@ -423,7 +444,6 @@ div.item-list-tabs.activity-type-tabs li a{
 }
 /*  sidebar  */
 div#sidebar {   
-  margin-left: -220px;
   margin-top: 50px;
   width: 220px;
 }
@@ -461,13 +481,6 @@ div#sidebar .widget_bpnextprofilewidget,
 }
 div#sidebar {
   margin-top: 55px;
-}
-div#content.two_column_left .padder {
-  margin-left: 200px;
-}
-div#content.three_column .padder { /* Three Column Layout */
-  margin: 0 210px 0 190px;
-  width: 570px;
 }
 div#item-header,
 div#item-header-content,
@@ -509,7 +522,6 @@ div.item-list-tabs .feed{
 }
 #destacado #item-nav{
 	float: left;
-	width: 790px;
 	border: 1px solid #E6E6E6;
 	background: #F3F3F3;
 	border-radius: 5px;
@@ -919,30 +931,39 @@ color: #F8D9D9;
 text-decoration: none;
 }
 /* - - - - - BOTÕES - - - -  */
-.generic-button.friendship-button a, a.button.reject.confirm{
-	color: #FFFFFF;
+.generic-button a{
 	padding: 4px;
-	background: #E94848;
+	text-decoration: none;
 	border-radius: 5px;
 }
-.generic-button.friendship-button a:hover, a.button.reject.confirm:hover{
-	background: #E97979;
-	color: #FFFFFF;
-	text-decoration: none;
+
+a.friendship-button.pending.requested, a.friendship-button.pending.requested:hover {
+	color: #FFF;
+	background: #D6D6D6;
 }
-.generic-button.blog-button a, .generic-button.group-button a, a.button.accept{
+a.add, a.request-membership, a.visit {
 	color: #FFFFFF;
-	padding: 4px;
 	background: #8AC3DA;
-	border-radius: 5px;
 }
-.generic-button.blog-button a:hover, .generic-button.group-button a:hover, a.button.accept:hover{
-	background: #A8D5E7;
+a.add:hover, a.request-membership:hover, a.visit:hover {
 	color: #FFFFFF;
-	text-decoration: none;
+	background: #B2D3E0;
 }
-.generic-button.group-button leave-group {
-	color: #F00;
+a.remove, a.leave-group {
+	color: #FFFFFF;
+	background: #F06666;
+}
+a.remove:hover, a.leave-group:hover {
+	color: #FFFFFF;
+	background: #F58B8B;
+}
+a.join-group {
+	color: #FFFFFF;
+	background: #90D351;
+}
+a.join-group:hover {
+	color: #FFFFFF;
+	background: #AADA7D;
 }
 /* BLOCO DO TOPO */
 h3.widgettitle-hb {
@@ -953,7 +974,7 @@ h3.widgettitle-hb {
 #header-block {
 	float: right;
 	height: 140px;
-	margin: 50px 0 0 0;
+	margin: 60px 0 0 0;
 	border: 0px solid #000;
 }
 #header-block ul.header-block li img{
@@ -988,4 +1009,22 @@ h3.widgettitle-hb {
 	-webkit-transform: rotate(8deg) ;
 	-moz-transform: rotate(8deg) ;
 	-o-transform: rotate(8deg) ;
+}
+#icones a.fiocruz , #icones a.governo, #icones a.mcultura {
+	height: 52px;
+	float: left;
+	text-decoration: none;
+	margin: 0 10px 0 0;
+}
+#icones a.fiocruz {
+	width: 130px;
+	background: url('../images/footer-icone.jpg');
+}
+#icones a.governo {
+	width: 140px;
+	background: url('../images/footer-icone.jpg') -150px 0;
+}
+#icones a.mcultura{
+	width: 60px;
+	background: url('../images/footer-icone.jpg') 60px 0;
 }
