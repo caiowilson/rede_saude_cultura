@@ -131,7 +131,23 @@ div#espaco-01 {
 	width: 100%;
 	height: 180px;
 	margin: 20px 0;
-	border-bottom: 1px solid #000;
+}
+div#noticias {
+	width: 485px;
+	height: 200px;
+	float: left;
+	border: 0px solid #000;
+}
+div#atividades {
+	width: 485px;
+	height: 200px;
+	float: right;
+	border: 0px solid #000;
+}
+div#noticias h1, div#atividades h1{
+	font-size: 16px;
+	padding: 5px;
+	background: #65DA41;
 }
 div#espaco-01 .box-facebook, div#espaco-01 .box-youtube, div#espaco-01 .box-twitter, div#espaco-01 .box-login {
 	width: 230px;
