@@ -209,10 +209,6 @@ div#fiocruz {
 div#fiocruz {
 	background: url("http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/bg_fiocruz.jpg") repeat-x;
 }
-div#noticias h1, div#atividades h1{
-	color: #FFFFFF;
-	background: #65DA41;
-}
 /* Begin Typography & Colors */
 * { margin: 0; padding: 0; }
 body { 

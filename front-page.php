@@ -105,14 +105,11 @@
 						</div>
 					</div>
 					<!-- BLOCO DE NOTÍCIAS -->
-					<div id="noticias">
-						<h1>&Uacute;ltimas Not&iacute;cias</h1>
-					</div>
+					<?php locate_template( array( 'home-content-left.php' ), true ) ?>
 					
 					<!-- BLOCO DE ATIVIDADES -->
-					<div id="atividades">
-						<h1>Atividades da Rede</h1>
-					</div>
+					<?php locate_template( array( 'home-content-right.php' ), true ) ?>
+					
 				
 				<?php //if (have_posts()) : while (have_posts()) : the_post(); ?>				
 					<?php //<h1 class="pagetitle"><?php the_title(); </h1>?>	
