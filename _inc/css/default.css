@@ -505,15 +505,13 @@ div#sidebar #login-box {
 --------------------------------------------------------------*/
 div#home-content-left {
 	width: 485px;
-	height: 200px;
 	float: left;
-	border: 1px solid #000;
+	border: 0px solid #000;
 }
 div#home-content-right {
 	width: 485px;
-	height: 200px;
 	float: right;
-	border: 1px solid #000;
+	border: 0px solid #000;
 }
 h3.widgettitle-home {
 	color: #FFFFFF;
