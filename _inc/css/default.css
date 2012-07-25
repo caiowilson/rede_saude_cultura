@@ -149,15 +149,8 @@ div#espaco-01 .box-facebook h2, div#espaco-01 .box-youtube h2, div#espaco-01 .bo
 	padding: 5px 0 0 35px;
 	margin: 0 0 8px 0;
 }
-div#espaco-01 .box-login input.login {
-	width: 120px;
-}
-input[type="password"] {
-background: #FFFFFF;
-box-shadow: none !important;
--moz-box-shadow: none !important;
--webkit-box-shadow: none !important;
-padding: 2px;
+.box-login .menu-login {
+	margin: 8px 0 0 5px;
 }
 /*--------------------------------------------------------------
 2.2 - Header
@@ -507,7 +500,39 @@ div#sidebar div#sidebar-me ul#quicklinks li a.last {
 div#sidebar #login-box {
 	padding-bottom: 14px;
 }
-
+/*--------------------------------------------------------------
+2.5 - Formulários
+--------------------------------------------------------------*/
+div#espaco-01 .box-login fieldset {
+	margin: 0 0 0 5px;
+}
+div#espaco-01 .box-login input.login {
+	width: 120px;
+	padding: 2px !important;
+	margin: 0 0 5px 0;
+	border-radius: 3px;
+	color: #7C7C7C;
+	border: 1px solid #CCC !important;
+}
+input[type="password"] {
+	background: #FFFFFF !important; 
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	padding: 0 !important;
+}
+.box-login fieldset button.button.submit.user-submit {
+	border: none;
+	background: #73BE36;
+	padding: 3px;
+	font-size: 13px;
+	border-radius: 3px;
+	color: #FFFFFF;
+	margin: 0 0 0 2px;
+}
+.box-login fieldset button.button.submit.user-submit :hover {
+	background: #000;
+}
 /*--------------------------------------------------------------
 3.0 - Non-structural
 --------------------------------------------------------------*/
@@ -1642,14 +1667,7 @@ form.standard-form input[type=text],
 form.standard-form select, form.standard-form input[type=password],
 .dir-search input[type=text],
 div.page input[type=text] {
-	border: 1px solid #bbb;
-	padding: 6px;
-	font: inherit;
-	font-size: 14px;		
-	color: #999;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+
 }
 div#content form.standard-form .editfield {	
 	padding: 10px 12px;
@@ -1801,9 +1819,6 @@ form.standard-form span.asterisk {
 }
 div.page input[type=text] {
 	font-size: 12px;
-  height: 16px;
-  padding: 4px;
-  width: 300px;
 }
 
 /*--------------------------------------------------------------
