@@ -59,9 +59,11 @@ jQuery(document).ready(function() {
 					
 						 ?>"><img src="<?php echo $logo ?>"/></a>
 						</div>
+						<div class="description"><?php bloginfo('description'); ?></div>
+						
 						<?php endif; ?>
 	<h1 class="title"> <a href="<?php echo site_url() ?>" title="<?php _e( 'Home', 'buddypress' )					
-						 ?>"><img><?php bloginfo( 'name' ); ?></a></h1>
+						 ?>"><?php bloginfo( 'name' ); ?></a></h1>
 					
 					
 					<!-- AQUI COMEÇA UM BLOQUINHO DE FOTO -->

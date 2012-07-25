@@ -92,15 +92,24 @@
 						<div class="box-login">
 							<h2>Login</h2>
 							<fieldset>
-								<label for="user_login">Username: </label>
+								<label for="user_login">Usu&aacute;rio: </label>
 								<input type="text" name="log" value="" size="20" id="user_login" tabindex="101" class="login"><br/>
-								<label for="user_pass">Password: </label>
-								<input type="password" name="pwd" value="" size="20" id="home-login-password" tabindex="102" class="login"><br/>
-								<button type="submit" name="user-submit" id="user-submit" tabindex="104" class="button submit user-submit">Log In</button>
+								<label for="user_pass">Senha: </label>
+								<input type="password" name="pwd" value="" size="20" id="home-login-password" tabindex="102" class="login">
+								<button type="submit" name="user-submit" id="user-submit" tabindex="104" class="button submit user-submit">Entrar</button>
 								<input type="hidden" name="user-cookie" value="1">
 							</fieldset>
+							<div class="menu-login">
+								<a href="#">Cadastrar</a> | <a href="#">Esqueci minha senha</a>
+							</div>
 						</div>
 					</div>
+					<!-- BLOCO DE NOTÍCIAS -->
+					<?php locate_template( array( 'home-content-left.php' ), true ) ?>
+					
+					<!-- BLOCO DE ATIVIDADES -->
+					<?php locate_template( array( 'home-content-right.php' ), true ) ?>
+					
 				
 				<?php //if (have_posts()) : while (have_posts()) : the_post(); ?>				
 					<?php //<h1 class="pagetitle"><?php the_title(); </h1>?>	

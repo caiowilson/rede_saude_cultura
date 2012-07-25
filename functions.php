@@ -28,6 +28,30 @@ if ( function_exists ('register_sidebar')) {
     )
   ); 
   
+  // Area 4, Bloco left que ficará na HOME.
+  register_sidebar( array(
+      'name'          => 'Home Content Left',
+      'id'            => 'home-content-left',
+      'description'   => 'Bloco esquerdo da home.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="widgettitle-home">',
+      'after_title'   => '</h3>'
+    )
+  );
+  
+  
+  // Area 5, Bloco right que ficará na HOME.
+  register_sidebar( array(
+      'name'          => 'Home Content Right',
+      'id'            => 'home-content-right',
+      'description'   => 'Bloco direito da home.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="widgettitle-home">',
+      'after_title'   => '</h3>'
+    )
+  );
   
 }
 
