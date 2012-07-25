@@ -8,7 +8,6 @@
 		<?php do_action( 'bp_before_blog_home' ) ?>
 
 		<div class="page" id="blog-latest">
-
 			<!-- Display page title and content -->
 
 				<?php

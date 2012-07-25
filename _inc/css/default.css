@@ -120,16 +120,45 @@ div#content .padder, div#content_inicial .padder { /* Full Width Layout */
 	position: relative;
 	min-height: 400px;
 }
-div#content.two_column .padder, div#content_inicial.two_column .padder { /* Right Sidebar Layout */
-	
-}
-div#content.two_column_left .padder, div#content_inicial.two_column_left .padder { /* Left Sidebar Layout */
-}
-
 div#content.three_column, div#content_inicial.three_column .padder { /* Left Sidebar Layout */
 	width: 570px;
 }
-
+div#content.full-width {
+	width: 100%;
+	background: #FFFFFF;
+}
+div#espaco-01 {
+	width: 100%;
+	height: 180px;
+	margin: 20px 0;
+	border-bottom: 1px solid #000;
+}
+div#espaco-01 .box-facebook, div#espaco-01 .box-youtube, div#espaco-01 .box-twitter, div#espaco-01 .box-login {
+	width: 230px;
+	height: 140px;
+	float: left;
+	margin: 0 8px;
+	background: #F7F7F7;
+	border: 0px solid #000;
+}
+div#espaco-01 .box-facebook h2, div#espaco-01 .box-youtube h2, div#espaco-01 .box-twitter h2 , div#espaco-01 .box-login h2{
+	font-size: 14px;
+	height: 25px;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 5px 0 0 35px;
+	margin: 0 0 8px 0;
+}
+div#espaco-01 .box-login input.login {
+	width: 120px;
+}
+input[type="password"] {
+background: #FFFFFF;
+box-shadow: none !important;
+-moz-box-shadow: none !important;
+-webkit-box-shadow: none !important;
+padding: 2px;
+}
 /*--------------------------------------------------------------
 2.2 - Header
 --------------------------------------------------------------*/
@@ -144,11 +173,10 @@ div#content.three_column, div#content_inicial.three_column .padder { /* Left Sid
 	padding: 0;
 }
 #header div#logo {
-  left: 0;
+  left: 10px;
   position: absolute;
-  top: 0;
+  top: 15px;
   z-index: 1;
-  height: 87px;
   overflow: hidden;
 }
 
@@ -183,7 +211,6 @@ html, body {
 	color: #6dcfe8;
 }
 #footer #footer-links {
-width: 500px;
 float: left;
 border: 0px solid #000;
 }
@@ -196,7 +223,7 @@ border: 0px solid #000;
 }
 #footer #footer-links ul li {
 	display: inline;
-	margin: 0 6px;
+	margin: 0 10px 0 0;
 }
 #footer #credits {
 	margin: 0 0 10px 0;
@@ -2171,8 +2198,6 @@ body.groups div#item-header div#item-actions div#item-meta {
   position: relative;
 }
 div#group-name {
-	float: left;
-	width: 625px; 
 }
 div#content.two_column div#group-name {
 	width: 400px;
@@ -2351,7 +2376,6 @@ ul#friend-list li, ul.invite-list li {
 
 div.item-list-tabs ul li.last {
 	float: right !important;
-	margin-right:0;
 }
 body.my-activity div.item-list-tabs ul li.last {
 	margin: 0 !important;
@@ -2504,8 +2528,6 @@ span.activity {
 	line-height: 1.2;
 }
 span.group-type {
-	font-weight: bold;
-	margin-bottom: -2px;
 }
 
 /*--------------------------------------------------------------

@@ -8,12 +8,11 @@
 
     <div id="group-name">
       <h2><?php bp_group_name() ?></h2>
+	  <span class="group-type"><b><?php bp_group_type() ?></b> - <?php printf( __( 'active %s ago', 'buddypress' ), bp_get_group_last_active() ) ?></span><span class="activity"></span>
 	  <?php do_action( 'bp_group_header_actions' ); ?>
       <div class="entry-directory">
         <?php bp_group_description() ?>
-      </div>    
-	  <span class="group-type"><?php bp_group_type() ?></span>
-	  <span class="activity"><?php printf( __( 'active %s ago', 'buddypress' ), bp_get_group_last_active() ) ?></span>
+      </div>
     </div>
 
 
