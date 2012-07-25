@@ -1,4 +1,4 @@
-<?php get_header() ?>						
+<?php get_header() ?>					
 		<!-- When homepage is using blog posts -->
 		<?php if ( is_home() ) : ?>		
 				

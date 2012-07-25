@@ -11,7 +11,6 @@
 
 <?php get_header( 'buddypress' ); ?>
 
-
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
 
@@ -22,7 +21,6 @@
   <?php else: ?>
     <div id="content" class="two_column_left" >
   <?php endif; ?>
-
 		<div class="padder">
 			<div id="destacado">
 		<form action="" method="post" id="blogs-directory-form" class="dir-form">
