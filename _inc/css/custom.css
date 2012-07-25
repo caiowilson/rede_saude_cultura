@@ -209,6 +209,53 @@ div#fiocruz {
 div#fiocruz {
 	background: url("http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/bg_fiocruz.jpg") repeat-x;
 }
+h4.srp-widget-title {
+margin: 0;
+}
+span.srp-widget-date {
+font-size: 11px;
+color: #BEBEBE;
+}
+/* ---------------- PLUGIN DE ATIVIDADES -------------*/
+.swa-wrap .swa-activity-list {
+margin: 0;
+}
+ul.swa-activity-list li {
+padding: 5px 0 0 0 !important;
+overflow: hidden;
+}
+.swa-activity-list .swa-activity-header a:first-child, span.highlight {
+	background: none !important;
+	border-bottom: none !important;
+	border-right: none !important;
+	color: none !important;
+	padding: 0 !important;
+	text-decoration: none;
+	-moz-border-radius: none !important;
+	-webkit-border-radius: none !important;
+	border-radius: none !important;
+	margin-right: 0 !important;
+}
+.swa-activity-list .swa-activity-header a:first-child:hover {
+background: none !important;
+color: #1430C4 !important;
+}
+div.swa-activity-meta {
+display: none;
+}
+div.swa-activity-comments {
+display: none;
+}
+.swa-wrap div.swa-pagination {
+border-bottom: 0 !important ;
+}
+ul.swa-activity-list li {
+border-top: 1px solid #EAEAEA;
+margin: 0 0 10px 0;
+}
+.swa-activity-list .swa-activity-content .swa-activity-header, .swa-activity-list .swa-activity-content .comment-header {
+line-height: 15px !important;
+}
 /* Begin Typography & Colors */
 * { margin: 0; padding: 0; }
 body { 

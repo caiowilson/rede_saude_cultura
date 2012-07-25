@@ -1,4 +1,4 @@
-<?php get_header() ?>						
+<?php get_header() ?>					
 		<!-- When homepage is using blog posts -->
 		<?php if ( is_home() ) : ?>		
 				
@@ -111,16 +111,16 @@
 					<?php locate_template( array( 'home-content-right.php' ), true ) ?>
 					
 				
-				<?php //if (have_posts()) : while (have_posts()) : the_post(); ?>				
-					<?php //<h1 class="pagetitle"><?php the_title(); </h1>?>	
-					<div class="post" id="post-<?php the_ID(); ?>">	
-						<div class="entry">	
-							<?php the_content( __( '<p class="serif">Read the rest of this page &rarr;</p>', 'buddypress' ) ); ?>	
-							<?php wp_link_pages( array( 'before' => __( '<p><strong>Pages:</strong> ', 'buddypress' ), 'after' => '</p>', 'next_or_number' => 'number')); ?>	
-						</div>	
-					</div>	
-				<?php //endwhile; endif; ?>	
-				
+					<?php //if (have_posts()) : while (have_posts()) : the_post(); ?>				
+						<?php //<h1 class="pagetitle"><?php the_title(); </h1>?>	
+						<!--<div class="post" id="post-<?php the_ID(); ?>">	
+							<div class="entry">	
+								<?php //the_content( __( '<p class="serif">Read the rest of this page &rarr;</p>', 'buddypress' ) ); ?>	
+								<?php //wp_link_pages( array( 'before' => __( '<p><strong>Pages:</strong> ', 'buddypress' ), 'after' => '</p>', 'next_or_number' => 'number')); ?>	
+							</div>	
+						</div>	-->
+					<?php //endwhile; endif; ?>	
+					
 				</div><!-- .page -->	
 			</div><!-- .padder -->
 			</div><!-- #content -->
