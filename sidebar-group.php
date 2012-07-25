@@ -3,8 +3,7 @@
 <div id="sidebar" class="group-sidebar">
 	<div class="padder">
 
-	<?php do_action( 'bp_inside_before_sidebar' ) ?>
-
+	<?php do_action( 'bp_inside_before_sidebar' ) ?>		
 		<div class="no-search">
 			<?php if ( !function_exists('dynamic_sidebar')
 					|| !dynamic_sidebar('Group') ) : ?>

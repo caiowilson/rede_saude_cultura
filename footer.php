@@ -28,9 +28,9 @@
 					</div>
 				</div>
 				<div id="icones">
-					<a href="#" class="next">&nbsp;</a>
-					<a href="#" class="wordpress">&nbsp;</a>
-					<a href="#" class="budyboss">&nbsp;</a>
+					<a class="fiocruz" href="#">&nbsp;</a>
+					<a class="governo" href="#">&nbsp;</a>
+					<a class="mcultura" href="#">&nbsp;</a>
 				</div>
 				<div class="clr"></div>
 				<?php do_action( 'bp_footer' ) ?>
@@ -50,7 +50,10 @@
 			<?php buddy_boss_dump_log();?>
 			</div> 
 		<?php endif;?>
-
+		
+		<a href="#" id="bug">
+			Reportar um bug	
+		</a>
 	</body>
 
 </html>

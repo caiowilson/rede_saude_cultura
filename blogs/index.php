@@ -24,10 +24,10 @@
   <?php endif; ?>
 
 		<div class="padder">
- 
+			<div id="destacado">
 		<form action="" method="post" id="blogs-directory-form" class="dir-form">
 			
-			<h1><?php the_title(); ?><?php if ( is_user_logged_in() && bp_blog_signup_enabled() ) : ?></h1>
+			<h1><?php the_title(); ?></h1><?php if ( is_user_logged_in() && bp_blog_signup_enabled() ) : ?>
 			<a class="button-2" href="<?php echo bp_get_root_domain() . '/' . bp_get_blogs_root_slug() . '/create/' ?>"><?php _e( 'Create a Site', 'buddypress' ); ?></a><?php endif; ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div class="entry-directory">
@@ -76,7 +76,7 @@
 			<?php wp_nonce_field( 'directory_blogs', '_wpnonce-blogs-filter' ); ?>
 
 		</form><!-- #blogs-directory-form -->
-
+			</div>
 		</div><!-- .padder -->
 	</div><!-- #content -->
 	

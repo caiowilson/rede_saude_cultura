@@ -12,7 +12,17 @@
 
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
-  <div id="destacado">
+  
+
+
+  <?php if ( is_active_sidebar('profile') ) : ?>
+    <div id="content"class="three_column">
+  <?php else: ?>
+    <div id="content"class="two_column_left">
+  <?php endif; ?>
+  
+		<div class="padder">
+			<div id="destacado">
     <?php do_action( 'bp_before_member_plugin_template' ); ?>
 
       <div id="item-header">
@@ -37,16 +47,6 @@
         </div>
       </div><!-- #item-nav -->
   </div>
-
-
-  <?php if ( is_active_sidebar('profile') ) : ?>
-    <div id="content"class="three_column">
-  <?php else: ?>
-    <div id="content"class="two_column_left">
-  <?php endif; ?>
-  
-		<div class="padder">
-			
 			<div id="item-body" role="main">
 
 				<?php do_action( 'bp_before_member_body' ); ?>

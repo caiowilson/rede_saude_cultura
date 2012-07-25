@@ -1,6 +1,10 @@
 <?php get_header(); ?>
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
-  <div id="destacado">
+  
+
+	<div id="content">
+		<div class="padder">
+<div id="destacado">
       <div id="item-header">
         <?php locate_template( array( 'members/single/member-header.php' ), true ) ?>
       </div>
@@ -12,10 +16,6 @@
         </div>
       </div>
   </div>
-
-	<div id="content">
-		<div class="padder">
-
 			<div id="item-body">
 
 				<div class="item-list-tabs no-ajax" id="subnav">

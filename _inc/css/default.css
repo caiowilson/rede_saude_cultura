@@ -78,9 +78,6 @@ body {
 body.buddyboss-activity-ajax {
 	background: #fff;
 }
-.padder {
-	padding: 20px;
-}
 #wrapper {
 	width: 1000px;
 	padding: 0 5px 0 6px;
@@ -103,30 +100,34 @@ body.activity-permalink div#container {
 
 div#content {
 	float: left;
-	width: 100%;
+	width: 763px;
 }
-div#content .left-menu {
+div#content_inicial {
+	float: left;
+	width: 100%;
+	background: #FFFFFF;
+}
+div#content .left-menu, div#content_inicial .left-menu {
 	float: left;
 	width: 170px;
 }
-div#content .main-column {
+div#content .main-column, div#content_inicial .main-column {
 	margin-left: 190px;
 }
-div#content .padder { /* Full Width Layout */
+div#content .padder, div#content_inicial .padder { /* Full Width Layout */
 	margin-right: 0;
 	padding: 0;
 	position: relative;
 	min-height: 400px;
 }
-div#content.two_column .padder { /* Right Sidebar Layout */
-	margin-right: 250px;
+div#content.two_column .padder, div#content_inicial.two_column .padder { /* Right Sidebar Layout */
+	
 }
-div#content.two_column_left .padder { /* Left Sidebar Layout */
-	margin-right: 0;
-	margin-left: 195px;
+div#content.two_column_left .padder, div#content_inicial.two_column_left .padder { /* Left Sidebar Layout */
 }
-div#content.three_column .padder { /* Three Column Layout */
-	margin: 0 250px 0 200px;
+
+div#content.three_column, div#content_inicial.three_column .padder { /* Left Sidebar Layout */
+	width: 570px;
 }
 
 /*--------------------------------------------------------------
@@ -173,7 +174,7 @@ html, body {
 	margin: 0 auto;
 }	
 #colophon {
-	padding:25px 25px 29px 25px;
+	padding:25px 25px 27px 25px;
 	width: 950px;
 	background: url(../images/bg-footer.jpg) repeat-x;
 	margin: 0 0 0 6px;
@@ -202,12 +203,11 @@ border: 0px solid #000;
 	color: #727272;
 }
 #footer #icones {
-width: 300px;
 float: left;
-margin: 0 0 0 100px;
+margin: 0 0 0 50px;
 border: 0px solid #000;
 }
-#footer #icones .next, #footer #icones .wordpress, #footer #icones .budyboss{
+#footer #icones .next, #footer #icones .wordpress, #footer #icones .budypress{
 border: 0px solid #000;
 float: right;
 width: 50px;
@@ -217,21 +217,21 @@ height: 50px;
 background: url(../images/footer-icones.jpg);
 }
 #footer #icones a.wordpress {
-background: url(../images/footer-icones.jpg) 46px 0;
-}
-#footer #icones a.budyboss {
 background: url(../images/footer-icones.jpg) 88px 0;
+}
+#footer #icones a.budypress {
+background: url(../images/footer-icones.jpg) 46px 0;
 }
 #footer #icones a.next:hover {
 background: url(../images/footer-icones.jpg) 0 49px;
 text-decoration: none;
 }
 #footer #icones a.wordpress:hover {
-background: url(../images/footer-icones.jpg) 46px 49px;
+background: url(../images/footer-icones.jpg) 88px 49px;
 text-decoration: none;
 }
-#footer #icones a.budyboss:hover {
-background: url(../images/footer-icones.jpg) 88px 49px;
+#footer #icones a.budypress:hover {
+background: url(../images/footer-icones.jpg) 46px 49px;
 text-decoration: none;
 }
 .clr {
@@ -244,7 +244,6 @@ clear: both;
 div#sidebar {
 	float: left;
 	width: 240px;
-	margin-left: -240px;
 	margin-top: 50px;
 	position: relative;
 	z-index: 10;
@@ -253,16 +252,15 @@ div#sidebar .no-search {
 	margin-top: -50px; /* adjust for no search bar */
 }
 div#sidebar .padder {
-	padding: 0 0 20px 20px;
+	padding: 0 0 0 20px;
 }
 div#sidebar .widget {
 	margin-bottom: 25px;
-  padding: 10px 12px;
-  overflow:hidden;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: 0px solid #c0d3e1;
+	padding: 10px 12px;
+	overflow:hidden;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
 }
 div#sidebar .widget_recent_entries ul,
 div#sidebar .widget_categories ul,
@@ -295,17 +293,6 @@ div#sidebar h3.widgettitle,
   clear: left;
   position: relative;
   font-size: 14px;
-  font-weight: bold;
-  padding: 3px 12px 5px;
-}	
-div#sidebar h3.widgettitle {
-	float: left;
-	width: 100%;
-	margin: -10px -12px 10px;
-	/*
-	background: #c1dbea url(../images/widgettitle.jpg) repeat-x left top;
-	*/
-	text-align: left;	
 }
 #wp-calendar caption {
 	margin: -10px -12px 10px;
@@ -319,7 +306,7 @@ div#sidebar .widget ul.item-list {
 div#sidebar .widget ul.item-list li {
 	border-top: 1px solid #d7d7d7;
 	border-bottom: none;
-	min-height: 54px;
+	min-height: 30px;
 }
 div#sidebar .widget ul.item-list div.item-meta,
 div#sidebar .widget ul.item-list div.item-content {
@@ -334,7 +321,7 @@ div#sidebar .widget_search input[type=text] {
 	padding: 2px;
 }
 div#sidebar ul.item-list img.avatar {
-	margin-right: 12px;
+	margin-right: 5px;
 }
 div#sidebar div.item-avatar img {
 	margin: 1px;
@@ -360,9 +347,6 @@ div#sidebar div.item-options {
 div#sidebar div.item-meta, div#sidebar div.item-content {
 	margin-left: 38px;
 	font-size: 11px;
-}
-div#sidebar span.activity {
-	color: #777;
 }
 div#sidebar div.tags div#tag-text {
 	font-size: 1.4em;
@@ -933,7 +917,7 @@ div.item-options {
 
 img.avatar {
 	float: left;
-	background: #eee;
+	background: #FFFFFF;
 	border: 1px solid #ccc;
 }
 #content .page img {
@@ -1165,6 +1149,7 @@ form#whats-new-form h5 {
 }
 form#whats-new-form #whats-new-content #whats-new-textarea {
   padding: 0;
+  max-width: 560px;
 }
 div#whats-new-pic-preview-inner {
 	background-color: #F6F6F6;
@@ -1626,7 +1611,7 @@ form.standard-form#signup_form div div.error {
 6.4 - Forms
 --------------------------------------------------------------*/
 
-form.standard-form textarea, form.standard-form input[type=text],
+form.standard-form input[type=text],
 form.standard-form select, form.standard-form input[type=password],
 .dir-search input[type=text],
 div.page input[type=text] {
@@ -1661,8 +1646,7 @@ form.standard-form div.checkbox label,
 form.standard-form div.radio label {
 	font-weight: normal;
 	margin: 5px 0 0 0;
-	font-size: 14px;
-	color: #999;
+	color: #868686;
 }
 form.standard-form#sidebar-login-form label {
 	margin-top: 5px;
@@ -1694,7 +1678,9 @@ form.standard-form textarea#message_content {
 	height: 200px;
 }
 form.standard-form#send-reply textarea {
-	width: 97.5%;
+	width: 500px;
+	height: 100px;
+	border: 1px solid #D5D5D5;
 }
 body.group-forum form.standard-form input[type=text],	
 body.group-forum form.standard-form textarea,
@@ -1883,14 +1869,14 @@ table tr.alt {
   border-top: 1px solid #eee;
 }
 table#message-threads a.button.confirm {
-	margin-left: 3px;
+	color: #F00;
 }
 table.notification-settings {
 	margin-bottom: 20px;
 	text-align: left;
 }
 table.notification-settings th.icon, table.notification-settings td:first-child { display: none; }
-table.notification-settings th.title { width: 80%; }
+table.notification-settings th.title { font-size: 18px; padding: 0; }
 table.notification-settings .yes, table.notification-settings .no { width: 40px; text-align: center; }
 table.notification-settings .title, table.notification-settings .yes, table.notification-settings .no {	font-weight: bold; }
 table.forum {
@@ -2074,7 +2060,7 @@ div#item-header-avatar {
 	width: 152px;
 }	
 div#item-body {
-	margin-top: 5px;
+	margin: 5px 0 10px 0;
 }
 body.group-forum div#item-body {
 	margin-top: 0;
@@ -2196,7 +2182,6 @@ div#content.two_column div#group-name .entry-directory {
 	line-height: 18px;
 }
 div#item-actions {
-	float: right;
 }
 div#item-actions div#group-admins {
 	float: left;
@@ -2219,13 +2204,7 @@ div#item-actions ul li h5 {
 	font-size: 12px;
   margin: 0;
 }
-div#item-actions, div#item-actions h3, div#item-actions ul li h5 {
-	width: 160px; /* necessary for IE7 */
-}
 div#item-actions ul {
-	font-size: 12px;
-  margin: 1.8em 0 0;
-  border-top: none;
 }
 div#item-actions ul img.avatar {
 	display: none;
@@ -2245,12 +2224,12 @@ div#item-header ul.avatars img.avatar {
 	margin: 2px;
 }
 div#item-header div.generic-button, div#item-header a.button {
-	display: inline;
+	display: none;
 	margin: 40px 5px 0 0;
 	z-index: 999;
 }
 div#item-header div#message.info {
-	line-height: 80%;
+	display: none;
 }
 #forum-header {
 	min-height: 62px;
@@ -2283,7 +2262,6 @@ div.two_column div#topic-meta div.admin-links {
 }
 .entry-directory {
 	padding-bottom: 10px;
-	font-size: 14px;
 	line-height: 21px;
 }
 
@@ -2352,12 +2330,8 @@ ul.item-list li div.action {
 	position: absolute;
 	top: 15px;
 	right: 0;
-	padding-top: 5px;
 	text-align: right;
 }	
-ul.item-list li div.action div.generic-button {
-	display: inline;
-}
 ul.item-list li div.meta {
 	margin-top: 10px;
 	color: #999;
@@ -2378,7 +2352,6 @@ ul#friend-list li, ul.invite-list li {
 div.item-list-tabs ul li.last {
 	float: right !important;
 	margin-right:0;
-	margin-top: 20px;
 }
 body.my-activity div.item-list-tabs ul li.last {
 	margin: 0 !important;
@@ -2410,12 +2383,7 @@ ul li.loading a {
 div#item-nav ul li.loading a {
 	background-position: 88% 50%;
 }
-div#item-nav {
-	float: left;
-	margin-top: 190px;
-}
 body.groups.single-item div#item-nav {
-	margin-top: 208px;
 }
 div#object-nav.item-list-tabs,
 div#sub-nav.item-list-tabs {
@@ -2434,9 +2402,8 @@ div#sub-nav.item-list-tabs li {
 }
 div#object-nav.item-list-tabs li a,
 div#sub-nav.item-list-tabs li a {
-	padding: 4px 1px;
+	padding: 2px 5px;
 	background-color: transparent;
-	margin: 0;
 	color: #497EA8;
 }
 div#object-nav.item-list-tabs li.current a,
@@ -2476,7 +2443,7 @@ div#item-body div.profile {
   padding: 5px 8px 4px;
  }
 div#group-create-tabs ul {
-	border: 1px solid #bbb;
+	border: 1px solid #DBDBDB;
 	float: left;
 	overflow: hidden;
 	margin-bottom: 5px;
@@ -2489,11 +2456,11 @@ div#group-create-tabs ul li {
 }
 div#group-create-tabs ul li a, div#group-create-tabs ul li span {
 	background: url("../images/group-create-tabs.png");
-	color: #382E1F;
+	color: #7E7E7E;
 	display: block;
 	float: left;
 	height: 31px;
-	font-size: 14px;
+	font-size: 11px;
 	line-height: 31px;
 	margin-left: -10px;
 	padding: 0 20px;
@@ -2545,7 +2512,7 @@ span.group-type {
 6.12 - Buttons
 --------------------------------------------------------------*/
 
-a.button, input[type=submit], input[type=button], input[type=reset], .bbp-submit-wrapper button {
+input[type=submit], input[type=button], input[type=reset], .bbp-submit-wrapper button {
 	background: #9fcb57 url(../images/button-gradient.png) top repeat-x;
 	* background: #c9e284; /* IE7 only */ 
 	border: 1px solid #adc671;
@@ -2562,7 +2529,7 @@ a.button, input[type=submit], input[type=button], input[type=reset], .bbp-submit
 	overflow: visible; /* IE7 Fix */
 	display: inline-block; /* IE7 Fix */	
 }
-a.button:hover, a.button:focus, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, div.generic-button a:hover, .bbp-submit-wrapper button:hover {
+a.button:hover, a.button:focus, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .bbp-submit-wrapper button:hover {
 	border-color: #93ac56;
 	* background: #c9e284; /* IE7 only */
 	color: #89AA3A;

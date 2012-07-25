@@ -1,11 +1,12 @@
+<!--?php /* Template name: Inicial */ ?-->
 <?php get_header() ?>
 
     
-  <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
+  <?php //locate_template( array( 'sidebar-left.php' ), true ) ?>
 
   <?php do_action( 'bp_before_directory_members_content' ) ?>
 
-  <div id="content" class="three_column">
+  <div id="content_inicial" class="two_column">
 		<div class="padder">
 		
 		<?php do_action( 'bp_before_blog_page' ) ?>
