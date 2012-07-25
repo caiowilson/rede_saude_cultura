@@ -18,7 +18,7 @@
 	<?php if ( is_active_sidebar('members') || buddyboss_is_plugin_active('bp-profile-search/bps-main.php') ) : ?>
 		<div id="content" class="two_column_left">
 	<?php else: ?>	
-		<div id="content" class="three_column">		
+		<div id="content">		
 		<div id="members-dir-search" class="dir-search">
 			<?php bp_directory_members_search_form();?>
 		</div><!-- #members-dir-search -->

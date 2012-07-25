@@ -18,15 +18,11 @@ body {
 	background: url(../images/bg_topo.jpg) no-repeat;
 }
 #header h1{
-  text-indent: -9999px;
   position: absolute;
   top: 20px;
   float: left;
   border: none;
-  width: 304px;
-  height: 108px;
-  background: url(../images/topo.jpg);
-  font-weight: bold;
+  display: none;
 }
 .sf-menu {
   border-left: none;
@@ -60,7 +56,50 @@ div#container {
   width: auto;
   background: url('../images/bg_left.jpg') repeat-y;
 }
-
+/* BLOCOS DA HOME */
+div#espaco-01 .box-facebook h2 {
+	text-shadow: 1px 1px 0 #345ABB;
+	background: #5388E2 url('../images/icones-home.png') no-repeat;
+}
+div#espaco-01 .box-youtube h2 {
+	text-shadow: 1px 1px 0 #CA2424;
+	background: #e25151 url('../images/icones-home.png') no-repeat 0 -44px;
+}
+div#espaco-01 .box-twitter h2 {
+	text-shadow: 1px 1px 0 #2193D3;
+	background: #81c6f9 url('../images/icones-home.png') no-repeat 0 -85px;
+}
+div#espaco-01 .box-login h2 {
+	text-shadow: 1px 1px 0 #A8A8A8;
+	background: #CACACA url('../images/icones-home.png') no-repeat 0 -123px;
+}
+div#espaco-01 .box-facebook ul, div#espaco-01 .box-youtube ul, div#espaco-01 .box-twitter ul {
+	margin: 0;
+}
+div#espaco-01 .box-youtube ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 0 0 3px 6px;
+	color: #D55151;
+	border-bottom: 1px solid #E4E4E4;
+}
+div#espaco-01 .box-facebook ul  li a{
+	text-decoration: none;
+	display: block;
+	padding: 0 0 3px 6px;
+	color: #517BD5;
+	border-bottom: 1px solid #E4E4E4;
+}
+div#espaco-01 .box-facebook ul  li a:hover, div#espaco-01 .box-twitter ul  li a:hover, div#espaco-01 .box-youtube ul  li a:hover {
+	color: #A2A2A2;
+}
+div#espaco-01 .box-twitter ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 0 0 3px 6px;
+	color: #4AA1DB;
+	border-bottom: 1px solid #E4E4E4;
+}
 div#item-header-avatar {
   left: -170px;
 }
@@ -77,9 +116,9 @@ div#item-header-avatar {
 }
 div#sidebar.left_column {
   margin-left: 0;
-  width: 194px;
+  width: 180px;
   margin-right: 0px;
-  padding-right: 3px;
+  padding-right: 10px;
 }
 div#sidebar.left_column{
   border-right: 0px solid #C0D3E1;
@@ -182,6 +221,7 @@ body {
 }
 legend { display: none; }
 fieldset { border: none; }
+div.login-box fieldset { width: 170px; }
 ul, ol { list-style: none; }
 ol { list-style-type: decimal;}
 table { border-collapse: collapse; width: 100%; }
@@ -501,9 +541,6 @@ div#item-header-avatar {
   float: left;
   padding: 3px;
 }
-div#group-name {
-  float: none;
-}
 div#item-body div#subnav.item-list-tabs ul li,
 div.item-list-tabs ul li,
 ul.button-nav li {
@@ -511,7 +548,6 @@ ul.button-nav li {
   float: left;
 }
 div.item-list-tabs .feed{
-  position: absolute;
   right: 8px;
 }
 #whats-new-content .bpfb_actions_container{
@@ -880,10 +916,13 @@ div.SR div.googlegroup, div.SR div.delicious, div.SR div.youtube { padding:12px;
 	padding: 6px;
 	margin-bottom: 10px;
 }
-#menu-item-67, #menu-item-249, #menu-item-70, #menu-item-72, #menu-item-69, #menu-item-68 {
+#menu-item-67, #menu-item-249, #menu-item-70, #menu-item-72, #menu-item-69, #menu-item-68, #menu-item-297 {
 	background: url(../images/icon-menu.png) no-repeat;
 	height: 35px;
 	margin: 6px 0 0 0;
+}
+#menu-item-297 {
+	background-position: 0 -152px;
 }
 #menu-item-67 {
 	background-position: 0 10px;

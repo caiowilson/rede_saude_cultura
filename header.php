@@ -21,20 +21,7 @@
 
 	<body <?php body_class() ?> id="bp-default">
 
-  <!-- barra do governo -->
-  <div id="barra-brasil">
-      <div class="barra">
-          <ul>
-              <li><a href="http://www.brasil.gov.br" class="brasilgov" title="Portal de Estado do Brasil">www.brasil.gov.br</a></li>
-          </ul>
-      </div>
-  </div>
-  
-  <div id="fiocruz">
-          <a class="logo" href="http://www.fiocruz.br"><img src="http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/logo.jpg"></a>
-          <img src="http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/titulo_fiocruz.jpg">
-  </div>
-	
+
 	<!--[if lte IE 6]><script src="<?php bloginfo('template_directory'); ?>/_inc/js/ie6/warning.js"></script><script>window.onload=function(){e("<?php bloginfo('stylesheet_directory'); ?>/_inc/js/ie6/")}</script><![endif]-->
 
 <?php // CODIGO PARA EXIBIR O LINK PARA REPORTAR ERROS ?>
@@ -65,7 +52,7 @@ jQuery(document).ready(function() {
 										$logo = get_bloginfo("template_directory")."/_inc/images/logo.jpg";
 							} ?>
 
-						<?php $logo = '' ; // remove o logo da página ?>
+						
 						<?php if($logo): ?>
 						<div id="logo">
 								<a href="<?php echo site_url() ?>" title="<?php _e( 'Home', 'buddypress' )
@@ -74,7 +61,7 @@ jQuery(document).ready(function() {
 						</div>
 						<?php endif; ?>
 	<h1 class="title"> <a href="<?php echo site_url() ?>" title="<?php _e( 'Home', 'buddypress' )					
-						 ?>"><?php bloginfo( 'name' ); ?></a></h1>
+						 ?>"><img><?php bloginfo( 'name' ); ?></a></h1>
 					
 					
 					<!-- AQUI COMEÇA UM BLOQUINHO DE FOTO -->
@@ -98,12 +85,14 @@ jQuery(document).ready(function() {
 	
 			<?php do_action( 'bp_after_header' ) ?>
 			<?php do_action( 'bp_before_container' ) ?>
-      
-      <?php if (function_exists('breadcrumbs_everywhere')) {
-      ?> <div id="breadcrumb"><?php
-        breadcrumbs_everywhere();
-      ?></div><?php
-      } ?>
+      <?php if ( !is_home() ) : ?>
+		<?php if (function_exists('breadcrumbs_everywhere')) {
+		?> <div id="breadcrumb"><?php
+			breadcrumbs_everywhere();
+		?></div><?php
+	    } 
+    endif;
+     ?>
       
 			<div id="container">
 
