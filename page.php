@@ -1,5 +1,4 @@
 <?php get_header() ?>
-
     
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
