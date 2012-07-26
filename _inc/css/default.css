@@ -542,7 +542,7 @@ div#espaco-01 .box-login input.login {
 	color: #7C7C7C;
 	border: 1px solid #CCC !important;
 }
-input[type="password"] {
+.box-login input[type="password"] {
 	background: #FFFFFF !important; 
 	box-shadow: none !important;
 	-moz-box-shadow: none !important;
