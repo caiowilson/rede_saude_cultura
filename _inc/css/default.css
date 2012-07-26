@@ -612,7 +612,7 @@ div#message-thread strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 20px;
+	margin: 0 0 15px;
 	line-height: 1.5em;
 	color: #555;
 	font-weight: bold;
@@ -872,7 +872,6 @@ div#blog-latest div.post {
 }
 div.page h1.pagetitle, h1.posttitle {
 	line-height: 1.3em;
-	margin-bottom: 20px;
 	font-size: 21px;
 }
 .navigation, .paged-navigation, .comment-navigation {
@@ -890,7 +889,7 @@ div.page h1.pagetitle, h1.posttitle {
 	float: left;
 	margin-right: 15px;
 }
-div.post p, div.page p { margin: 0 0 20px 0; }
+div.post p, div.page p { margin: 0; }
 div.post ul, div.post ol, div.post dl,
 div.page ul, div.page ol, div.page dl { margin: 0 0 18px 3em; }
 /*div.post ul, div.page ul { list-style: square; }*/
@@ -1116,7 +1115,7 @@ img.avatar {
 	margin-top: 30px;
 }
 #comments {
-	margin-left: 90px;
+	margin: 0 0 10px 90px;
 }
 #comments h3 {
 	margin-bottom: 10px;
@@ -1127,7 +1126,8 @@ h3#reply-title {
 }
 #respond {
 	padding: 2px 20px 22px 16px;
-	background: #ECF3F7;
+	background: #F3F3F3;
+	border: 1px solid #E4E4E4;
 }
 a#cancel-comment-reply-link {
 	float: right;

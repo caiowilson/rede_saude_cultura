@@ -2,7 +2,7 @@
 
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
-	<div id="content" class="three_column">
+	<div id="content">
 		<div class="padder">
 
 		<?php do_action( 'bp_before_blog_home' ) ?>
