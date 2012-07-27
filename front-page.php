@@ -59,51 +59,17 @@
 			<div class="padder">
 				<div class="page">
 					<div id="espaco-01">
-						<div class="box-facebook">
-							<h2>facebook</h2>
-							<ul>
-								<li><a href="#">teste teste teste teste</a></li>
-								<li><a href="#">teste teste teste teste</a></li>
-								<li><a href="#">teste teste teste teste</a></li>
-								<li><a href="#">teste teste teste teste</a></li>
-							</ul>
-						</div>
-						
-						<div class="box-youtube">
-							<h2>youtube</h2>
-							<ul>
-								<li><a href="#">teste teste teste teste</a></li>
-								<li><a href="#">teste teste teste teste</a></li>
-								<li><a href="#">teste teste teste teste</a></li>
-								<li><a href="#">teste teste teste teste</a></li>
-							</ul>
-						</div>
-						
-						<div class="box-twitter">
-							<h2>twitter</h2>
-							<ul>
-								<li><a href="#">teste teste teste teste</a></li>
-								<li><a href="#">teste teste teste teste</a></li>
-								<li><a href="#">teste teste teste teste</a></li>
-								<li><a href="#">teste teste teste teste</a></li>
-							</ul>
-						</div>
-						
-						<div class="box-login">
-							<h2>Login</h2>
-							<fieldset>
-								<label for="user_login">Usu&aacute;rio: </label>
-								<input type="text" name="log" value="" size="20" id="user_login" tabindex="101" class="login"><br/>
-								<label for="user_pass">Senha: </label>
-								<input type="password" name="pwd" value="" size="20" id="home-login-password" tabindex="102" class="login">
-								<button type="submit" name="user-submit" id="user-submit" tabindex="104" class="button submit user-submit">Entrar</button>
-								<input type="hidden" name="user-cookie" value="1">
-							</fieldset>
-							<div class="menu-login">
-								<a href="#">Cadastrar</a> | <a href="#">Esqueci minha senha</a>
-							</div>
-						</div>
+						<!-- PRIMEIRO BLOCO -->
+						<?php locate_template( array( 'home-content-top-01.php' ), true ) ?>
+						<!-- SEGUNDO BLOCO -->
+						<?php locate_template( array( 'home-content-top-02.php' ), true ) ?>
+						<!-- TERCEIRO BLOCO -->
+						<?php locate_template( array( 'home-content-top-03.php' ), true ) ?>
+						<!-- QUARTO BLOCO -->
+						<?php locate_template( array( 'home-content-top-04.php' ), true ) ?>					
+
 					</div>
+					
 					<!-- BLOCO DE NOTÍCIAS -->
 					<?php locate_template( array( 'home-content-left.php' ), true ) ?>
 					

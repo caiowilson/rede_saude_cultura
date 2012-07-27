@@ -136,7 +136,7 @@ div#espaco-01 {
 	height: 180px;
 	margin: 20px 0;
 }
-div#espaco-01 .box-facebook, div#espaco-01 .box-youtube, div#espaco-01 .box-twitter, div#espaco-01 .box-login {
+#home-content-top h3.widgettitle-home-facebook, #home-content-top h3.widgettitle-home-twitter, div#espaco-01 .box-login {
 	width: 230px;
 	height: 140px;
 	float: left;
@@ -144,16 +144,22 @@ div#espaco-01 .box-facebook, div#espaco-01 .box-youtube, div#espaco-01 .box-twit
 	background: #F7F7F7;
 	border: 0px solid #000;
 }
-div#espaco-01 .box-facebook h2, div#espaco-01 .box-youtube h2, div#espaco-01 .box-twitter h2 , div#espaco-01 .box-login h2{
+#home-content-top{
+	width: 236px;
+	height: 180px;
+	float: left;
+	margin: 0 6px;
+	background: #F7F7F7;
+	overflow: hidden;
+	border: 0px solid #000;
+}
+#home-content-top h3.widgettitle-home-facebook, #home-content-top h3.widgettitle-home-twitter, div#espaco-01 .box-login h2{
 	font-size: 14px;
 	height: 25px;
 	color: #FFF;
 	text-transform: uppercase;
 	padding: 5px 0 0 35px;
 	margin: 0 0 8px 0;
-}
-.box-login .menu-login {
-	margin: 8px 0 0 5px;
 }
 /*--------------------------------------------------------------
 2.2 - Header
