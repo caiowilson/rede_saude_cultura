@@ -146,12 +146,22 @@ div#espaco-01 {
 }
 #home-content-top{
 	width: 236px;
-	height: 180px;
+	height: 230px;
 	float: left;
-	margin: 0 6px;
+	margin: 0 6px 10px 6px;
 	background: #F7F7F7;
 	overflow: hidden;
 	border: 0px solid #000;
+}
+#home-content-top ul{
+	margin: 0;
+	font-size: 11px;
+}
+#home-content-top ul li{
+	border-bottom: 1px solid #ECECEC;
+}
+#home-content-top ul li a{
+	color: #DF912D;
 }
 #home-content-top h3.widgettitle-home-facebook, #home-content-top h3.widgettitle-home-twitter, div#espaco-01 .box-login h2{
 	font-size: 14px;
@@ -160,6 +170,21 @@ div#espaco-01 {
 	text-transform: uppercase;
 	padding: 5px 0 0 35px;
 	margin: 0 0 8px 0;
+}
+div#rss-2 h4  a.rsswidget{
+	font-size: 14px;
+	height: 25px;
+	color: #FFF;
+	display: block;
+	text-transform: uppercase;
+	padding: 5px 0 0 35px;
+	margin: 0 0 8px 0;
+	border: 0px solid #000;
+
+}
+div#rss-2 h4 { 
+	text-shadow: 1px 1px 0 #2193D3;
+	background: #81c6f9 url('../images/icones-home.png') no-repeat 0 -85px;
 }
 /*--------------------------------------------------------------
 2.2 - Header

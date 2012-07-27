@@ -84,8 +84,8 @@ if ( function_exists ('register_sidebar')) {
       'description'   => 'Terceiro bloco do topo da home.',
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
-      'before_title'  => '<h3 class="widgettitle-home">',
-      'after_title'   => '</h3>'
+      'before_title'  => '<h4 class="widgettitle-home">',
+      'after_title'   => '</h4>'
     )
   );
   
@@ -96,8 +96,8 @@ if ( function_exists ('register_sidebar')) {
       'description'   => 'Quarto bloco do topo da home.',
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
-      'before_title'  => '<h3 class="widgettitle-home">',
-      'after_title'   => '</h3>'
+      'before_title'  => '<h4 class="widgettitle-home">',
+      'after_title'   => '</h4>'
     )
   );
   
