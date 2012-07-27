@@ -17,6 +17,12 @@
 			
 			wp_head(); 
 		?>
+		
+		<!-- Facebook OpenGraph Tags -->
+		<meta property="og:image" content="<?php echo $logo ?>" />
+		<meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>" />
+		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+		<!-- Facebook OpenGraph Tags -->
 	</head>
 
 	<body <?php body_class() ?> id="bp-default">

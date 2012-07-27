@@ -1,7 +1,3 @@
-<div id="post-dir-search" class="dir-search">
-	<?php get_search_form(); ?>
-</div><!-- #post-dir-search -->
-
 <?php do_action( 'bp_before_sidebar' ) ?>
 
 <div id="sidebar">

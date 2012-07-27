@@ -963,12 +963,12 @@ div.SR div.googlegroup, div.SR div.delicious, div.SR div.youtube { padding:12px;
 	padding: 6px;
 	margin-bottom: 10px;
 }
-#menu-item-67, #menu-item-249, #menu-item-70, #menu-item-72, #menu-item-69, #menu-item-68, #menu-item-299 {
+#menu-item-67, #menu-item-249, #menu-item-70, #menu-item-72, #menu-item-69, #menu-item-68, #menu-item-299, #menu-item-551 {
 	background: url(../images/icon-menu.png) no-repeat;
 	height: 35px;
 	margin: 6px 0 0 0;
 }
-#menu-item-299 {
+#menu-item-299, #menu-item-551 {
 	background-position: 0 -152px;
 }
 #menu-item-67 {
@@ -1060,7 +1060,7 @@ h3.widgettitle-hb {
 #header-block {
 	float: right;
 	height: 140px;
-	margin: 40px 0 0 0;
+	margin: 60px 0 0 0;
 	border: 0px solid #000;
 }
 #header-block ul.header-block li img{
