@@ -171,7 +171,7 @@ div#espaco-01 {
 	padding: 5px 0 0 35px;
 	margin: 0 0 8px 0;
 }
-div#rss-2 h4  a.rsswidget{
+div#rss-2 h4  {
 	font-size: 14px;
 	height: 25px;
 	color: #FFF;
@@ -180,11 +180,16 @@ div#rss-2 h4  a.rsswidget{
 	padding: 5px 0 0 35px;
 	margin: 0 0 8px 0;
 	border: 0px solid #000;
-
 }
-div#rss-2 h4 { 
-	text-shadow: 1px 1px 0 #2193D3;
-	background: #81c6f9 url('../images/icones-home.png') no-repeat 0 -85px;
+div#rss-2 h4 a.rsswidget {
+	color: #FFF;
+}
+div#rss-2 h4 {
+text-shadow: 1px 1px 0 #C27819;
+background: #F5A43C url('../images/icones-home.png') no-repeat 0 -85px;
+}
+div#rss-2 h4:first-child a img{
+	display: none;
 }
 /*--------------------------------------------------------------
 2.2 - Header
@@ -643,7 +648,7 @@ div#message-thread strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 15px;
+	margin: 0 0 10px;
 	line-height: 1.5em;
 	color: #555;
 	font-weight: bold;
@@ -651,7 +656,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 28px; }
 h2 { font-size: 24px; }
 h3 { font-size: 20px; }
-h4 { font-size: 16px; }
 h5 { font-size: 14px; }
 h6 { font-size: 12px; }
 
