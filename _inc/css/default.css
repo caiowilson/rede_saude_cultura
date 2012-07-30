@@ -163,15 +163,8 @@ div#espaco-01 {
 #home-content-top ul li a{
 	color: #DF912D;
 }
-#home-content-top h3.widgettitle-home-facebook, #home-content-top h3.widgettitle-home-twitter, div#espaco-01 .box-login h2{
-	font-size: 14px;
-	height: 25px;
-	color: #FFF;
-	text-transform: uppercase;
-	padding: 5px 0 0 35px;
-	margin: 0 0 8px 0;
-}
-div#rss-2 h4  {
+
+h4.widgettitle-home {
 	font-size: 14px;
 	height: 25px;
 	color: #FFF;
@@ -180,6 +173,19 @@ div#rss-2 h4  {
 	padding: 5px 0 0 35px;
 	margin: 0 0 8px 0;
 	border: 0px solid #000;
+}
+span.rss-date {
+	display: block;
+	font-size: 9px;
+	color: #B6B6B6;
+}
+#loginwithajaxwidget-2 h4.widgettitle-home {
+	text-shadow: 1px 1px 0 #B1B1B1;
+	background: #DADADA url('../images/icones-home.png') no-repeat 0 -60px;
+}
+#tweetblender-2 h4.widgettitle-home {
+	text-shadow: 1px 1px 0 #2193D3;
+	background: #81c6f9 url('../images/icones-home.png') no-repeat 0 -30px;
 }
 div#rss-2 h4 a.rsswidget {
 	color: #FFF;
@@ -190,6 +196,18 @@ background: #F5A43C url('../images/icones-home.png') no-repeat 0 -90px;
 }
 div#rss-2 h4:first-child a img{
 	display: none;
+}
+h4.widgettitle-face {
+text-shadow: 1px 1px 0 #1D52C2;
+background: #447CF3 url('../images/icones-home.png') no-repeat;
+font-size: 14px;
+	height: 25px;
+	color: #FFF;
+	display: block;
+	text-transform: uppercase;
+	padding: 5px 0 0 35px;
+	margin: 0 0 8px 0;
+	border: 0px solid #000;
 }
 /*--------------------------------------------------------------
 2.2 - Header
