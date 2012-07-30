@@ -582,6 +582,20 @@ h3.widgettitle-home {
 	padding: 5px;
 	margin: 0 0 10px 0;
 }
+div#bp_swa_widget-2 h3.widgettitle-home {
+	color: #FFFFFF;
+	font-size: 16px;
+	background: #83D84A url('../images/icones-home-2.jpg') no-repeat 3px 0;
+	padding: 5px 5px 5px 40px;
+	margin: 0 0 10px 0;
+}
+div#wdg_specialrecentposts-2 h3.widgettitle-home {
+	color: #FFFFFF;
+	font-size: 16px;
+	background: #83D84A url('../images/icones-home-2.jpg') no-repeat 3px -35px;
+	padding: 5px 5px 5px 40px;
+	margin: 0 0 10px 0;
+}
 /*--------------------------------------------------------------
 2.5 - Formulários
 --------------------------------------------------------------*/
