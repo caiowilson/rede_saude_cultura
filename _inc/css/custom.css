@@ -542,6 +542,13 @@ div#sidebar .widget_bpnextprofilewidget div.login-box,
 div#sidebar .widget_bpnextprofilewidget{
   background-color: #fff;
 }
+input.input {
+background: #F9F9F9;
+border: 1px solid #CCC;
+box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+-webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+padding: 2px;
 div#sidebar {
   margin-top: 55px;
 }

@@ -983,7 +983,7 @@ div.post blockquote, div.page blockquote {
 	font-family: Georgia,"Times New Roman",serif;
 	line-height: 150%;
 }
-div.post table, div.page table {
+div.post table {
 	border: 1px solid #E7E7E7;
 	margin: 0 -1px 24px 0;
 	text-align: left;
@@ -1001,7 +1001,7 @@ div.post dt, div.post th,
 div.page dt, div.page th {
 	color: #000000;
 }
-div.post tr td, div.page tr td {
+div.post tr td {
 	border-top:1px solid #E7E7E7;
 	padding:6px 24px;
 }
