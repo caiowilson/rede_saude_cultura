@@ -26,22 +26,7 @@
 	</head>
 
 	<body <?php body_class() ?> id="bp-default">
-
-
 	<!--[if lte IE 6]><script src="<?php bloginfo('template_directory'); ?>/_inc/js/ie6/warning.js"></script><script>window.onload=function(){e("<?php bloginfo('stylesheet_directory'); ?>/_inc/js/ie6/")}</script><![endif]-->
-
-<?php // CODIGO PARA EXIBIR O LINK PARA REPORTAR ERROS ?>
-<?php /* comentando o script que junta o plugin bug-report com o link de reportar bug porque isso precisa de mais trabaho
-<script text="javascript">
-jQuery(document).ready(function() { 
-	jQuery('.reportar-bug').colorbox({href:'http://www.next.icict.fiocruz.br/redesocial/wp-content/plugins/bug-library/submitnewissue.php', opacity: 0.3, iframe:true, width:'600px', height:'700px'});
-	jQuery('.reportar-bug a').attr('href', 'javascript:void(0);');
-});
-</script>
-*/ ?>
-<?php if ( is_user_logged_in() ) : ?>
-
-<?php endif; ?>
 
 		<?php do_action( 'bp_before_header' ) ?>
 		
@@ -70,12 +55,10 @@ jQuery(document).ready(function() {
 						<?php endif; ?>
 	<h1 class="title"> <a href="<?php echo site_url() ?>" title="<?php _e( 'Home', 'buddypress' )					
 						 ?>"><?php bloginfo( 'name' ); ?></a></h1>
-					
-					
+
 					<!-- AQUI COMEÇA UM BLOQUINHO DE FOTO -->
 						<?php locate_template( array( 'header-bloco.php' ), true ) ?>
-							
-							
+
 						<ul class="sf-menu">
 							<?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
 								<?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'primary-menu', 'items_wrap' => '%3$s' ) ); ?>
@@ -83,25 +66,22 @@ jQuery(document).ready(function() {
 								<?php wp_list_pages( 'title_li=&depth=3' . bp_dtheme_page_on_front() ); ?>
 							<?php	} ?>
 						</ul>
-							
 																
 				</div><!-- .padder -->
 					
 				<?php do_action( 'bp_header' ) ?>
 	
 			</div><!-- #header -->
-	
+
 			<?php do_action( 'bp_after_header' ) ?>
 			<?php do_action( 'bp_before_container' ) ?>
 		
-			<?php if ( !is_home() ) : ?>
-		<?php if (function_exists('breadcrumbs_everywhere')) {
-		?> <div id="breadcrumb"><?php
-			breadcrumbs_everywhere();
-		?></div><?php
-	    } 
-    endif;
-     ?>
+		<?php if (function_exists('breadcrumbs_everywhere') && !is_front_page()) {
+      ?> <div id="breadcrumb"><?php
+        breadcrumbs_everywhere();
+      ?></div><?php
+    }
+    ?>
 				  
 			<div id="container">
 
