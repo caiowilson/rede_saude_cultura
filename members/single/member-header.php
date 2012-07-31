@@ -18,12 +18,25 @@
 
 <div id="item-header-content">
 
-	<h2><a href="<?php bp_displayed_user_link() ?>"><?php bp_displayed_user_fullname() ?></a></h2>
+	<h2><a href="<?php bp_displayed_user_link() ?>"><?php bp_displayed_user_fullname() ?></a></h2> 
 	
 	<?php do_action( 'bp_before_member_header_meta' ) ?>
-
-	<div id="item-meta">
-
+  
+  <div id="item-meta">
+    <span class="user-nicename">@<?php bp_displayed_user_username(); ?></span>
+  
+    <div id="user-social-links">  
+      <span class="twitter">
+          <a class="twitter-link" href="<?php  bp_profile_field_data( 'field=Twitter' ); ?>"><?php  bp_profile_field_data( 'field=Twitter' ); ?></a>
+      </span>
+      <span class="facebook">
+          <a class="facebook-link" href="<?php  bp_profile_field_data( 'field=Facebook' ); ?>"><?php  bp_profile_field_data( 'field=Facebook' ); ?></a>
+      </span>
+      <span class="google-plus">
+          <a class="google-plus" href="<?php  bp_profile_field_data( 'field=Google+' ); ?>"><?php  bp_profile_field_data( 'field=Google+' ); ?></a>
+      </span>
+    </div>
+    
 		<?php
 		 /***
 		  * If you'd like to show specific profile fields here use:
@@ -34,7 +47,10 @@
 		<?php do_action( 'bp_profile_header_meta' ) ?>
 
 	</div><!-- #item-meta -->
-
+   <div class="entry-directory">
+     <div class="sobre"><?php  bp_profile_field_data( 'field=Sobre mim' ); ?></div>
+   </div>
+   
 </div><!-- #item-header-content -->
 
 <?php do_action( 'bp_after_member_header' ) ?>
