@@ -93,7 +93,8 @@ jQuery(document).ready(function() {
 	
 			<?php do_action( 'bp_after_header' ) ?>
 			<?php do_action( 'bp_before_container' ) ?>
-      <?php if ( !is_home() ) : ?>
+		
+			<?php if ( !is_home() ) : ?>
 		<?php if (function_exists('breadcrumbs_everywhere')) {
 		?> <div id="breadcrumb"><?php
 			breadcrumbs_everywhere();
@@ -101,7 +102,7 @@ jQuery(document).ready(function() {
 	    } 
     endif;
      ?>
-      
+				  
 			<div id="container">
 
 			

@@ -57,48 +57,13 @@ div#container {
   background: url('../images/bg_left.jpg') repeat-y;
 }
 /* BLOCOS DA HOME */
-div#espaco-01 .box-facebook h2 {
+#home-content-top h3.widgettitle-home-facebook {
 	text-shadow: 1px 1px 0 #345ABB;
 	background: #5388E2 url('../images/icones-home.png') no-repeat;
 }
-div#espaco-01 .box-youtube h2 {
-	text-shadow: 1px 1px 0 #CA2424;
-	background: #e25151 url('../images/icones-home.png') no-repeat 0 -44px;
-}
-div#espaco-01 .box-twitter h2 {
+#home-content-top h3.widgettitle-home-twitter  {
 	text-shadow: 1px 1px 0 #2193D3;
-	background: #81c6f9 url('../images/icones-home.png') no-repeat 0 -85px;
-}
-div#espaco-01 .box-login h2 {
-	text-shadow: 1px 1px 0 #A8A8A8;
-	background: #CACACA url('../images/icones-home.png') no-repeat 0 -123px;
-}
-div#espaco-01 .box-facebook ul, div#espaco-01 .box-youtube ul, div#espaco-01 .box-twitter ul {
-	margin: 0;
-}
-div#espaco-01 .box-youtube ul li a {
-	text-decoration: none;
-	display: block;
-	padding: 0 0 3px 6px;
-	color: #D55151;
-	border-bottom: 1px solid #E4E4E4;
-}
-div#espaco-01 .box-facebook ul  li a{
-	text-decoration: none;
-	display: block;
-	padding: 0 0 3px 6px;
-	color: #517BD5;
-	border-bottom: 1px solid #E4E4E4;
-}
-div#espaco-01 .box-facebook ul  li a:hover, div#espaco-01 .box-twitter ul  li a:hover, div#espaco-01 .box-youtube ul  li a:hover {
-	color: #A2A2A2;
-}
-div#espaco-01 .box-twitter ul li a {
-	text-decoration: none;
-	display: block;
-	padding: 0 0 3px 6px;
-	color: #4AA1DB;
-	border-bottom: 1px solid #E4E4E4;
+	background: #81c6f9 url('../images/icones-home.png') no-repeat 0 -30px;
 }
 div#item-header-avatar {
   left: -170px;
@@ -132,6 +97,17 @@ div#sidebar.left_column .padder {
 ul.main-nav {
   margin-top: 61px !important;
   margin-right: 5px !important;
+}
+/* PLUGIN DO TWITTER */
+.tb_tweet-info {
+	font-size: 10px;
+}
+div.tb_header {
+	display: none;
+}
+div.tb_tweet {
+	border-bottom: solid 1px #CCC !important;
+	border-top: none !important;
 }
 /* bloco de reportar bug */
 .reportar-bug {
@@ -563,8 +539,15 @@ div#sidebar .widget_bpnextprofilewidget div.login-box,
   overflow: hidden;
   max-width: 170px;
 }
-div#sidebar .widget_bpnextprofilewidget,
-  background-color: #fff;
+div#sidebar .widget_bpnextprofilewidget{
+}
+input.input {
+background: #F9F9F9;
+border: 1px solid #CCC;
+box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+-webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+padding: 2px;
 }
 div#sidebar {
   margin-top: 55px;

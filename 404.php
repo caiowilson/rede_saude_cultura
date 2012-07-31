@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="content" class="two_column">
+	<div id="content" class="full-width">
 		<div class="padder">
 
 		<?php do_action( 'bp_before_404' ) ?>
@@ -23,7 +23,5 @@
 
 		</div><!-- .padder -->
 	</div><!-- #content -->
-
-	<?php locate_template( array( 'sidebar-default.php' ), true ) ?>
 
 <?php get_footer(); ?>

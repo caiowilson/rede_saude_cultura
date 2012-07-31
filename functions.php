@@ -53,6 +53,54 @@ if ( function_exists ('register_sidebar')) {
     )
   );
   
+  // Area 6, Primeiro Bloco da HOME.
+  register_sidebar( array(
+      'name'          => 'Home Content Top 01',
+      'id'            => 'home-content-top-01',
+      'description'   => 'Primeiro bloco do topo da home.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h4 class="widgettitle-home">',
+      'after_title'   => '</h4>'
+    )
+  );
+  
+  // Area 7, Segundo Bloco da HOME.
+  register_sidebar( array(
+      'name'          => 'Home Content Top 02',
+      'id'            => 'home-content-top-02',
+      'description'   => 'Segundo bloco do topo da home.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h4 class="widgettitle-home">',
+      'after_title'   => '</h4>'
+    )
+  );
+  
+  // Area 8, Terceiro Bloco da HOME.
+  register_sidebar( array(
+      'name'          => 'Home Content Top 03',
+      'id'            => 'home-content-top-03',
+      'description'   => 'Terceiro bloco do topo da home.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h4 class="widgettitle-home">',
+      'after_title'   => '</h4>'
+    )
+  );
+  
+  // Area 9, Quarto Bloco da HOME.
+  register_sidebar( array(
+      'name'          => 'Home Content Top 04',
+      'id'            => 'home-content-top-04',
+      'description'   => 'Quarto bloco do topo da home.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h4 class="widgettitle-face">',
+      'after_title'   => '</h4>'
+    )
+  );
+  
 }
 
 // Desativa a barra lá de cima

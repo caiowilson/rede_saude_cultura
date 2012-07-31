@@ -133,10 +133,10 @@ div#content.full-width {
 }
 div#espaco-01 {
 	width: 100%;
-	height: 180px;
+	height: 240px;
 	margin: 20px 0;
 }
-div#espaco-01 .box-facebook, div#espaco-01 .box-youtube, div#espaco-01 .box-twitter, div#espaco-01 .box-login {
+#home-content-top h3.widgettitle-home-facebook, #home-content-top h3.widgettitle-home-twitter, div#espaco-01 .box-login {
 	width: 230px;
 	height: 140px;
 	float: left;
@@ -144,16 +144,70 @@ div#espaco-01 .box-facebook, div#espaco-01 .box-youtube, div#espaco-01 .box-twit
 	background: #F7F7F7;
 	border: 0px solid #000;
 }
-div#espaco-01 .box-facebook h2, div#espaco-01 .box-youtube h2, div#espaco-01 .box-twitter h2 , div#espaco-01 .box-login h2{
+#home-content-top{
+	width: 236px;
+	height: 230px;
+	float: left;
+	margin: 0 6px 10px 6px;
+	background: #F7F7F7;
+	overflow: hidden;
+	border: 0px solid #000;
+}
+#home-content-top ul{
+	margin: 0;
+	font-size: 11px;
+}
+#home-content-top ul li{
+	border-bottom: 1px solid #ECECEC;
+}
+#home-content-top ul li a{
+	color: #DF912D;
+}
+
+h4.widgettitle-home {
 	font-size: 14px;
 	height: 25px;
 	color: #FFF;
+	display: block;
 	text-transform: uppercase;
 	padding: 5px 0 0 35px;
 	margin: 0 0 8px 0;
+	border: 0px solid #000;
 }
-.box-login .menu-login {
-	margin: 8px 0 0 5px;
+span.rss-date {
+	display: block;
+	font-size: 9px;
+	color: #B6B6B6;
+}
+#loginwithajaxwidget-2 h4.widgettitle-home {
+	text-shadow: 1px 1px 0 #B1B1B1;
+	background: #DADADA url('../images/icones-home.png') no-repeat 0 -60px;
+}
+#tweetblender-2 h4.widgettitle-home {
+	text-shadow: 1px 1px 0 #2193D3;
+	background: #81c6f9 url('../images/icones-home.png') no-repeat 0 -30px;
+}
+div#rss-2 h4 a.rsswidget {
+	color: #FFF;
+}
+div#rss-2 h4 {
+text-shadow: 1px 1px 0 #C27819;
+background: #F5A43C url('../images/icones-home.png') no-repeat 0 -90px;
+}
+div#rss-2 h4:first-child a img{
+	display: none;
+}
+h4.widgettitle-face {
+text-shadow: 1px 1px 0 #1D52C2;
+background: #447CF3 url('../images/icones-home.png') no-repeat;
+font-size: 14px;
+	height: 25px;
+	color: #FFF;
+	display: block;
+	text-transform: uppercase;
+	padding: 5px 0 0 35px;
+	margin: 0 0 8px 0;
+	border: 0px solid #000;
 }
 /*--------------------------------------------------------------
 2.2 - Header
@@ -528,6 +582,20 @@ h3.widgettitle-home {
 	padding: 5px;
 	margin: 0 0 10px 0;
 }
+div#bp_swa_widget-2 h3.widgettitle-home {
+	color: #FFFFFF;
+	font-size: 16px;
+	background: #83D84A url('../images/icones-home-2.jpg') no-repeat 3px 0;
+	padding: 5px 5px 5px 40px;
+	margin: 0 0 10px 0;
+}
+div#wdg_specialrecentposts-2 h3.widgettitle-home {
+	color: #FFFFFF;
+	font-size: 16px;
+	background: #83D84A url('../images/icones-home-2.jpg') no-repeat 3px -35px;
+	padding: 5px 5px 5px 40px;
+	margin: 0 0 10px 0;
+}
 /*--------------------------------------------------------------
 2.5 - Formulários
 --------------------------------------------------------------*/
@@ -612,7 +680,7 @@ div#message-thread strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 15px;
+	margin: 0 0 10px;
 	line-height: 1.5em;
 	color: #555;
 	font-weight: bold;
@@ -620,7 +688,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 28px; }
 h2 { font-size: 24px; }
 h3 { font-size: 20px; }
-h4 { font-size: 16px; }
 h5 { font-size: 14px; }
 h6 { font-size: 12px; }
 
@@ -916,7 +983,7 @@ div.post blockquote, div.page blockquote {
 	font-family: Georgia,"Times New Roman",serif;
 	line-height: 150%;
 }
-div.post table, div.page table {
+div.post table {
 	border: 1px solid #E7E7E7;
 	margin: 0 -1px 24px 0;
 	text-align: left;
@@ -934,7 +1001,7 @@ div.post dt, div.post th,
 div.page dt, div.page th {
 	color: #000000;
 }
-div.post tr td, div.page tr td {
+div.post tr td {
 	border-top:1px solid #E7E7E7;
 	padding:6px 24px;
 }
