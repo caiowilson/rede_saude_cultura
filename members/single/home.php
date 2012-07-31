@@ -14,7 +14,6 @@
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
 
-
 	 <?php if ( is_active_sidebar('profile') ) : ?> 
 	   <div id="content" class="three_column">  
 	 <?php else: ?>
@@ -27,22 +26,33 @@
      <?php do_action( 'bp_before_member_home_content' ) ?>
 
       <div id="item-header">
-        <?php locate_template( array( 'members/single/member-header.php' ), true ) ?>
+        <?php if ( bp_is_my_profile() ) { ?>
+          <h2>Meu perfil</h2>
+        <?php }else{ ?>
+          <?php locate_template( array( 'members/single/member-header.php' ), true ) ?>
+        <?php } ?>
+        
+          
       </div><!-- #item-header -->
+        <div id="item-nav">       
+          <div class="item-list-tabs no-ajax" id="object-nav">
+            
+             <?php if ( bp_is_my_profile() ) { ?>
+                <<- Use o "Meu menu" da barra lateral esquerda para navegar no seu perfil <<--
+              <?php } else { ?>
+                <ul>
+                  <?php bp_get_displayed_user_nav() ?>
 
-      <div id="item-nav">       
-        <div class="item-list-tabs no-ajax" id="object-nav">
-          <ul>
-            <?php bp_get_displayed_user_nav() ?>
+                  <?php  /* if ( has_nav_menu( 'profile-menu' ) ) : ?>
+                      <?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'profile-menu', 'items_wrap' => '%3$s' ) ); ?>
+                  <?php endif; */?>
 
-            <?php  /* if ( has_nav_menu( 'profile-menu' ) ) : ?>
-                <?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'profile-menu', 'items_wrap' => '%3$s' ) ); ?>
-            <?php endif; */?>
-
-            <?php do_action( 'bp_member_options_nav' ) ?>
-          </ul>
-        </div>    
-      </div><!-- #item-nav -->
+                  <?php do_action( 'bp_member_options_nav' ) ?>
+                </ul>
+              <?php } ?>
+          </div>    
+        </div><!-- #item-nav -->
+      
   </div>
 			<div id="item-body">
 
