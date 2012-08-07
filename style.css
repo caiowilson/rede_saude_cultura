@@ -2606,10 +2606,10 @@ div#group-create-tabs ul li a, div#group-create-tabs ul li span {
 	display: block;
 	float: left;
 	height: 31px;
-	font-size: 11px;
+	font-size: 10px;
 	line-height: 31px;
 	margin-left: -10px;
-	padding: 0 20px;
+	padding: 0 15px;
 	text-decoration: none;
 }
 div#group-create-tabs ul li.current a {
