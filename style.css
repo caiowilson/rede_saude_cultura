@@ -241,7 +241,7 @@ font-size: 14px;
   z-index: 1;
   overflow: hidden;
 }
-.description {
+div.description {
 	top: 120px;
 	font-weight: bold;
 	left: 60px;
