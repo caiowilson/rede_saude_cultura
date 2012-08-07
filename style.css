@@ -255,7 +255,7 @@ font-size: 14px;
 	margin: 0; /* necessary for sticky footer */
 }
 html, body {
-	height: 100%; /* necessary for sticky footer */
+	
 }
 #wrapper {
 	min-height: 100%;
