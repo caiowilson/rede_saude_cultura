@@ -17,7 +17,15 @@
 			
 			wp_head(); 
 		?>
-		
+
+
+    <?php if (get_option("buddy_boss_custom_logo", FALSE)!= FALSE) {
+      $logo = get_option("buddy_boss_custom_logo");
+      
+      } else {
+            $logo = get_bloginfo("template_directory")."/_inc/images/logo.jpg";
+      } ?>
+
 		<!-- Facebook OpenGraph Tags -->
 		<meta property="og:image" content="<?php echo $logo ?>" />
 		<meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>" />
@@ -35,13 +43,6 @@
 			<div id="header">
 			
 				<div class="padder">
-	
-						<?php if (get_option("buddy_boss_custom_logo", FALSE)!= FALSE) {
-							$logo = get_option("buddy_boss_custom_logo");
-							
-							} else {
-										$logo = get_bloginfo("template_directory")."/_inc/images/logo.jpg";
-							} ?>
 
 						
 						<?php if($logo): ?>

@@ -51,9 +51,15 @@
 			</div> 
 		<?php endif;?>
 		
-		<a href="#" id="bug">
-			Reportar um bug	
+    <a href="#" id="bug" class="duvidas-ou-sugestoes">
+			Duvidas ou Sugestões
 		</a>
+    <script language="JavaScript">
+      /* <![CDATA[ */
+      jQuery(document).ready(function() {
+      jQuery('.duvidas-ou-sugestoes').colorbox({href:'http://www.next.icict.fiocruz.br/sec/wp-content/plugins/bug-library/submitnewissue.php', opacity: 0.3, iframe:true, width:'570px', height:'660px'});});/* ]]&gt; */
+    </script>
+    
 	</body>
 
 </html>
