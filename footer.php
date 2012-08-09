@@ -28,9 +28,9 @@
 					</div>
 				</div>
 				<div id="icones">
-					<a class="fiocruz" href="#">&nbsp;</a>
-					<a class="governo" href="#">&nbsp;</a>
-					<a class="mcultura" href="#">&nbsp;</a>
+					<a class="fiocruz" href="http://portal.fiocruz.br/">Portal Fiocruz</a>
+					<a class="governo" href="http://www.brasil.gov.br/">Brasil</a>
+					<a class="mcultura" href="http://www.cultura.gov.br/">Ministério da Cultura</a>
 				</div>
 				<div class="clr"></div>
 				<?php do_action( 'bp_footer' ) ?>
