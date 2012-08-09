@@ -2,33 +2,6 @@
 
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
-  <div id="destacado">
-    <?php do_action( 'bp_before_member_plugin_template' ); ?>
-
-      <div id="item-header">
-
-        <?php locate_template( array( 'members/single/member-header.php' ), true ); ?>
-
-      </div><!-- #item-header -->
-
-      <div id="item-nav">
-        <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
-          <ul>
-
-            <?php bp_get_displayed_user_nav(); ?>
-            
-            <?php if ( has_nav_menu( 'profile-menu' ) ) : ?>
-                <?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'profile-menu', 'items_wrap' => '%3$s' ) ); ?>
-            <?php endif; ?>
-
-            <?php do_action( 'bp_member_options_nav' ); ?>
-
-          </ul>
-        </div>
-      </div><!-- #item-nav -->
-  </div>
-
-
   <?php if ( is_active_sidebar('profile') ) : ?>
     <div id="content"class="three_column">
   <?php else: ?>
@@ -37,6 +10,32 @@
 
 		<div class="padder">
 
+		  <div id="destacado">
+		    <?php do_action( 'bp_before_member_plugin_template' ); ?>
+		
+		      <div id="item-header">
+		
+		        <?php locate_template( array( 'members/single/member-header.php' ), true ); ?>
+		
+		      </div><!-- #item-header -->
+		
+		      <div id="item-nav">
+		        <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+		          <ul>
+		
+		            <?php bp_get_displayed_user_nav(); ?>
+		            
+		            <?php if ( has_nav_menu( 'profile-menu' ) ) : ?>
+		                <?php wp_nav_menu( array( 'container' => false, 'menu_id' => 'nav', 'theme_location' => 'profile-menu', 'items_wrap' => '%3$s' ) ); ?>
+		            <?php endif; ?>
+		
+		            <?php do_action( 'bp_member_options_nav' ); ?>
+		
+		          </ul>
+		        </div>
+		      </div><!-- #item-nav -->
+		  </div>
+		
 			<div id="item-body">
 			  
         <?php do_action( 'bp_before_member_body' ); ?>
