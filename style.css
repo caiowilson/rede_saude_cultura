@@ -2371,11 +2371,10 @@ div#item-header ul.avatars img.avatar {
 	margin: 2px;
 }
 div#item-header div.generic-button, div#item-header a.button {
-	display: none;
 	margin: 40px 5px 0 0;
 	z-index: 999;
 }
-div#item-header div#message.info {
+div#item-header div#message.info { 
 	display: none;
 }
 #forum-header {
