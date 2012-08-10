@@ -4756,4 +4756,12 @@ h3.widgettitle-hb {
   display:none;
 }
 
+#group-imagem-pequena {
+	float: right;
+	margin-top: 5px;
+}
 
+#group-imagem-pequena img{
+ 	width: 50px !important;
+ 	height: 50px !important;
+}

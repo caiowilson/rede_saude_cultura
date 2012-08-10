@@ -9,28 +9,22 @@
 
 ?>
 
-
 <?php get_header( 'buddypress' ); ?>
 
 <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
   <?php if ( bp_has_groups() ) : while ( bp_groups() ) : bp_the_group(); ?>
   <?php  $group_is_visible = bp_group_is_visible(); ?>
-		
-
   		
-    <?php if ( is_active_sidebar('group') && bp_group_is_visible() ) : ?>
-	
-    <div id="content" class="three_column">
-
-		<?php  else: ?>
+    <?php if ( is_active_sidebar('group') && bp_group_is_visible() && bp_is_group_home() ) : ?>
+    	<div id="content" class="three_column">
+	<?php  else: ?>
 		<div id="content" class="two_column_left">
-		
-			<?php endif; ?>
+	<?php endif; ?>
 
-			<div class="padder">
+	<div class="padder">
 
-			  <div id="destacado">
+	  <div id="destacado">
   
       <?php do_action( 'bp_before_group_home_content' ) ?>
 
@@ -115,7 +109,7 @@
 			</div><!-- .padder -->
 		</div><!-- #content -->
 
-	<?php if ( is_active_sidebar('group') && $group_is_visible ) : ?>
+	<?php if ( is_active_sidebar('group') && $group_is_visible && bp_is_group_home() ) : ?>
 		<?php locate_template( array( 'sidebar-group.php' ), true ) ?>
 	<?php endif; ?>
 

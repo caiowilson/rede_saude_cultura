@@ -2,14 +2,9 @@
 
   <?php locate_template( array( 'sidebar-left.php' ), true ) ?>
 
-  
+  <div id="content" class="two_column_left" >
 
-  <?php if ( is_active_sidebar('group') ) : ?>
-    <div id="content" class="three_column" >
-  <?php else: ?>
-    <div id="content" class="two_column_left" >
-  <?php endif; ?>
-		<div class="padder">
+	<div class="padder">
 <div id="destacado">
     <?php if ( bp_has_groups() ) : while ( bp_groups() ) : bp_the_group(); ?>
     <?php do_action( 'bp_before_group_plugin_template' ) ?>
@@ -42,9 +37,5 @@
 
 		</div><!-- .padder -->
 	</div><!-- #content -->
-
-	<?php if ( is_active_sidebar('group') ) : ?>
-		<?php locate_template( array( 'sidebar-group.php' ), true ) ?>
-	<?php endif; ?>
 
 <?php get_footer() ?>
