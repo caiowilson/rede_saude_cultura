@@ -9,7 +9,7 @@
        		<?php bp_group_avatar( 'type=thumb&width=50&height=50' ); ?>
        	</div>
 	<?php endif; ?>
-       	
+
 	<div id="item-header-content">
 
     <div id="group-name">
@@ -22,7 +22,6 @@
          <?php endif; ?>
       </div>
     </div>
- 
 
 	</div><!-- #item-header-content -->
 

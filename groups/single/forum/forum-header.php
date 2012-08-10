@@ -1,36 +1,8 @@
 <div id="forum-header">
-	
-	<div id="item-actions">
-		<?php if ( bp_group_is_visible() ) : ?>
-	
-			<div id="group-admins">
-			<h3><?php _e( 'Administrators', 'buddypress' ) ?></h3>
-			<?php bp_group_admin_memberlist( false ) ?>
-	
-			<?php do_action( 'bp_after_group_menu_admins' ) ?>
-			</div>
-	
-			<?php if ( bp_group_has_moderators() ) : ?>
-				<div id="group-mods">
-				<?php do_action( 'bp_before_group_menu_mods' ) ?>
-	
-				<h3><?php _e( 'Moderators' , 'buddypress' ) ?></h3>
-				<?php bp_group_mod_memberlist( false ) ?>
-	
-				<?php do_action( 'bp_after_group_menu_mods' ) ?>
-				</div>
-			<?php endif; ?>
-	
-		<?php endif; ?>
-	</div><!-- #item-actions -->
-	
-	<a href="<?php bp_group_permalink() ?>" title="<?php bp_group_name() ?>">
-			<?php bp_group_avatar() ?>
-	</a>
-	
+
 	<?php if ( bp_is_group_forum_topic() ) : ?>
 	
-		<h3><a href="<?php bp_group_permalink() ?>" title="<?php bp_group_name() ?>"><?php bp_group_name() ?></a> &rarr; <a href="<?php bp_group_permalink() ?>forum">Forum</a> &rarr; <?php bp_the_topic_title() ?></h3>
+		<h2><a href="<?php bp_group_permalink() ?>" title="<?php bp_group_name() ?>"><?php bp_group_name() ?></a> &rarr; <a href="<?php bp_group_permalink() ?>forum">Forum</a> &rarr; <?php bp_the_topic_title() ?></h2>
 		<span class="group-type"><?php bp_group_type() ?></span>	
 		
 		<div id="topic-meta">
@@ -45,9 +17,13 @@
 	
 	<?php else : ?>
 		
-		<h3><a href="<?php bp_group_permalink() ?>" title="<?php bp_group_name() ?>"><?php bp_group_name() ?></a> &rarr; Forum</h3>
+		<h2><a href="<?php bp_group_permalink() ?>" title="<?php bp_group_name() ?>"><?php bp_group_name() ?></a> &rarr; Forum</h2>
 		<span class="group-type"><?php bp_group_type() ?></span>
 		
 	<?php endif; ?>
-			
+
+	<div id="group-imagem-pequena">
+       	<?php bp_group_avatar( 'type=thumb&width=50&height=50' ); ?>
+    </div>
+	
 </div>
