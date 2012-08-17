@@ -51,7 +51,7 @@
 			</div> 
 		<?php endif;?>
 		
-    <?php echo bug_report_new_footer(); ?>
+    <?php bug_report_new_footer(); ?>
     </script>
 	</body>
 

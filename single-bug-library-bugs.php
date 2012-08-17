@@ -61,7 +61,7 @@ get_header(); ?>
 						</tr>
 						<tr id='bug-library-filler'><td></td></tr>
 						<tr id='bug-library-desc'>
-							<td colspan ='2'><div id='bug-library-desc-title'>Description</div><br />
+							<td colspan ='2'><div id='bug-library-desc-title'>DescriptiONE</div><br />
 							<?php if ($post->post_content != ''): ?>
 							<?php the_content(); ?>
 							<?php else: ?>
